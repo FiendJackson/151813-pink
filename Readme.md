@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Бервяченок](https://up.htmlacademy.ru/adaptive/7/user/151813).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев] (https://htmlacademy.ru/profile/id87167).
 
 ---
 
