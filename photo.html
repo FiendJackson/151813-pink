@@ -15,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--active">
-              <a href="index.html">главная</a>
+              <a class="main-nav__anchor" href="index.html">главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">фотографии</a>
+              <a class="main-nav__anchor" href="photo.html">фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">конкурс</a>
+              <a class="main-nav__anchor" href="form.html">конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="http://htmlacademy.ru" target="_blank">html academy</a>
+              <a class="main-nav__anchor" href="http://htmlacademy.ru" target="_blank">html academy</a>
             </li>
           </ul>
           <div class="page-header__logo">
@@ -152,9 +152,9 @@
             <img class="userpost__effects-icon  userpost__effects-icon--contrast" src="#" width="44" height="44" alt="contrast">
           </li>
         </ul>
-  <input type="range" name="effects" min="0" max="20" value="18">
-  <button type="submit" class="btn  userpost__btn">Запостить</button>
-  <button type="submit" class="btn  userpost__btn  userpost__btn--disabled" disabled>Отмена</button>
+        <input class="userpost__range" type="range" name="effects" min="0" max="20" value="18">
+        <button class="btn  userpost__btn" type="submit">Запостить</button>
+        <button class="btn  userpost__btn  userpost__btn--disabled" type="submit" disabled>Отмена</button>
       </section>
     </main>
     <footer class="content-footer">
