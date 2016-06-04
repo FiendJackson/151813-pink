@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__header">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__logo">
+              <img class="main-nav-header__image" src="" alt="logotype-white-mobile.svg" title="Pink" width="75" height="22">
+            </div>
+            <a class="main-nav__toogle  main-nav__toogle--closed" href="#"></a> <!-- Гамбургер -->
+          </div>
+        </div>
+          <div class="main-nav__body">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active">
+                  <a class="main-nav__anchor" href="index.html">главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__anchor" href="photo.html">фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__anchor" href="form.html">конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__anchor" href="http://htmlacademy.ru" target="_blank">html academy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__header">
+            <h1 class="promo__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="page-body">
+      <section class="form">
+        <p class="page-body__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br>
+          Пожалуйста, заполните форму ниже:
+        </p>
+        <form class="form__body" method="get" name="form" action="form.php">
+          <div class="form__block">
+            <label class="form__header" for="surname">фамилия:</label>
+            <input class="form__text" type="text" name="surname" placeholder="Укажите фамилию">
+            <label class="form__header" for="name">имя:</label>
+            <input class="form__text" type="text" name="name" placeholder="Введите Ваше имя">
+            <label class="form__header" for="patronymic">отчество:</label>
+            <input class="form__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="form__block  form__block--grey">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">ваши безбашенные достижения в путешествии</legend>
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" name="shark" checked>
+                Сделал селфи с акулой
+              </label>
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" name="sunburn" checked>
+                Обгорел на пляже
+              </label>
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" name="chuck">
+                Видел Чака Норриса
+              </label>
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" name="souvenirs">
+                Накупил сувениров
+              </label>
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" name="tower" checked>
+                Удержал башню
+              </label>
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" name="hotel">
+                Разгромил отель
+              </label>
+            </fieldset>
+          </div>
+          <div class="form__block">
+            <label class="form__header" for="tel">номерок телефончика:</label>
+            <input class="form__tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            <label class="form__header" for="email">адресок почты:</label>
+            <input class="form__email" type="email" name="email" placeholder="E-mail, пожалуйста">
+          </div>
+          <div class="form__block  form__block--grey">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">с каким приложением путешествовали?</legend>
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="ios" checked>
+                Pink для iOS
+              </label>
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="android">
+                Pink на Android
+              </label>
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="windows">
+                Windows Phone
+              </label>
+            </fieldset>
+          </div>
+          <div class="form__block">
+            <b class="form__header">опишите свои эмоции</b>
+            <textarea class="form__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            </textarea>
+          </div>
+          <button type="submit" class="form__button">Отправить форму</button>
+          <p class="form__notice">
+            <span class="form__star">*</span> - обязательные поля
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer class="content-footer">
+      <a class="content-footer__logo" href="#">
+        <img class="content-footer__image" src="#" width="147" height="40" alt="footerlogo.svg">
+      </a>
+      <ul class="content-footer__social-list">
+        <li class="content-footer__social-item">
+          <a class="content-footer__social-link  content-footer__social-link--tw" href="#"></a>
+        </li>
+        <li class="content-footer__social-item">
+          <a class="content-footer__social-link  content-footer__social-link--fb" href="#"></a>
+        </li>
+        <li class="content-footer__social-item">
+          <a class="content-footer__social-link  content-footer__social-link--yb" href="#"></a>
+        </li>
+      </ul>
+    <div class="content-footer__signature">
+      Разработано
+      <img class="content-footer__image" src="#" width="27" height="34" alt="htmlacademy-logo.svg">
+    </div>
+    </footer>
+  </body>
+</html>
