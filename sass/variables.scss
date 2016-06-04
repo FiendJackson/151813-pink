@@ -1,0 +1,7 @@
+$dark-blue: #283645;
+$opensans: 'Open Sans', sans-serif;
+@mixin ul-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

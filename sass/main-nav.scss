@@ -1,0 +1,29 @@
+.main-nav {
+  background-color: $dark-blue;
+}
+.main-nav__header {
+  
+}
+.main-nav__logo {
+  padding: 21px;
+}
+.main-nav__list {
+  background-color: $dark-blue;
+  font-family: $opensans;
+  @include ul-reset;
+}
+.main-nav__item {
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid rgba(255, 255, 255, .75);
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.main-nav__anchor {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
