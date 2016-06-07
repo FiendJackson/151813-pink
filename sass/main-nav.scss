@@ -2,10 +2,28 @@
   background-color: $dark-blue;
 }
 .main-nav__header {
-  
+
+}
+.main-nav__wrapper {
+
 }
 .main-nav__logo {
   padding: 21px;
+}
+.main-nav-header__image {
+
+}
+.main-nav__toogle {
+
+  &--closed {
+
+  }
+}
+.main-nav__body {
+
+}
+.main-nav__wrapper {
+
 }
 .main-nav__list {
   background-color: $dark-blue;
@@ -16,10 +34,14 @@
   border-bottom: 1px solid #000000;
   border-top: 1px solid rgba(255, 255, 255, .75);
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  &--active {
+
+  }
 }
 .main-nav__anchor {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
