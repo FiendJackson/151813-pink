@@ -1,14 +1,25 @@
 .userpost {
-
+  background: #f2f2f2;
 }
 .userpost__image {
-
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 .userpost__effects {
-
+  @include ul-reset;
+  font-size: 0;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .userpost__effects-item {
-
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 30px;
+  &:last-child {
+    padding-right: 0;
+  }
   &--active {
 
   }
@@ -25,11 +36,21 @@
   }
 }
 .userpost__range {
-
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.userpost__buttons {
+  border-top: 1px solid rgba(40, 54, 69, .1);
+  padding-bottom: 30px;
 }
 .userpost__btn {
-
+  font-weight: bold;
+  color: $pink;
+  border-color: $pink;
   &--disabled {
-
+    color: $dark-blue;
+    border-color: $dark-blue;
+    opacity: .1;
   }
 }

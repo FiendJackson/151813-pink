@@ -38,24 +38,24 @@
       <section class="promo">
         <div class="promo__wrapper">
           <div class="promo__header">
-            <h1 class="promo__title">Взгляните на жизнь ярче!</h1>
+            <h1 class="promo__title  promo__title--hidden">Взгляните на жизнь ярче!</h1>
           </div>
           <div class="download">
             <a href="#" class="btn  btn--white">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
                 <a class="download__link" href="#">
-                  <img class="download__image" src="" alt="apple-logo.svg" width="47" height="56" title="Apple-logo">
+                  <img class="download__image" src="img/logo-apple.svg" alt="apple" width="47" height="56" title="apple">
                 </a>
               </li>
               <li class="download__item">
                 <a class="download__link" href="#">
-                  <img class="download__image" src="" alt="android-logo.svg" width="47" height="56" title="Apple-logo">
+                  <img class="download__image" src="img/logo-android.svg" alt="android" width="47" height="56" title="android">
                 </a>
               </li>
               <li class="download__item">
                 <a class="download__link" href="#">
-                  <img class="download__image" src="" alt="microsoft-logo.svg" width="47" height="56" title="Apple-logo">
+                  <img class="download__image" src="img/logo-microsoft.svg" alt="microsoft" width="47" height="56" title="microsoft">
                 </a>
               </li>
             </ul>
@@ -95,38 +95,40 @@
               </p>
             </li>
           </ul>
+          <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" alt="iphone screen" width="157" height="320" title="iPhone screen">
         </div>
-        <img class="advantages__image" src="" alt="iphone screen #3" width="157" height="320" title="iPhone screen">
       </section>
       <section class="reviews">
         <div class="reviews__wrapper  slider">
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
-          <ul class="reviews__list">
-            <li class="reviews__item  reviews__item--active  slider__item">
-              <b class="reviews__name">Николай Петров</b>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-            <li class="reviews__item  slider__item">
-              <b class="reviews__name">Николай Петров</b>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-            <li class="reviews__item  slider__item">
-              <b class="reviews__name">Николай Петров</b>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-          </ul>
+          <div class="slider__inner">
+            <ul class="reviews__list  slider__slides">
+              <li class="reviews__item  reviews__item--active  slider__item">
+                <b class="reviews__name">Николай Петров</b>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+              <li class="reviews__item  slider__item">
+                <b class="reviews__name">Николай Петров</b>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+              <li class="reviews__item  slider__item">
+                <b class="reviews__name">Николай Петров</b>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+            </ul>
+          </div>
           <div class="reviews__toggles slider__toggles">
-          <label class="slider__toggle" for="reviews-input-1">1</label>
-          <label class="slider__toggle" for="reviews-input-2">2</label>
-          <label class="slider__toggle" for="reviews-input-3">3</label>
+            <label class="reviews__toggle  reviews__toggle--1" for="reviews-input-1"></label>
+            <label class="reviews__toggle  reviews__toggle--2" for="reviews-input-2"></label>
+            <label class="reviews__toggle  reviews__toggle--3" for="reviews-input-3"></label>
           </div>
         </div>
       </section>
@@ -135,82 +137,101 @@
           <input class="slider__input" type="radio" name="price" id="price-input-1">
           <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
           <input class="slider__input" type="radio" name="price" id="price-input-3">
-          <ul class="price__list">
-            <li class="price__item  slider__item">
-
-              <div class="price__header">
-                <h3 class="price__title">База</h3>
-                  <span class="price__rate">1.99 USD</span>
-              </div>
-              <div class="price__body">
-                <div class="price__attribute">
-                Розовый фильтр
+          <div class="slider__inner">
+            <ul class="price__list  slider__slides">
+              <li class="slider__item  price__item">
+                <div class="price__header">
+                  <h3 class="price__title">База</h3>
+                    <span class="price__rate">1,99 USD</span>
                 </div>
-                <div class="price__value  price__value--yes">
-                </div>
-                <div class="price__attribute">
-                    Смайлики
-                </div>
-                <div class="price__value  price__value--no">
-                </div>
-                <div class="price__attribute">
-                  Комментарии
-                </div>
-                <div class="price__value  price__value--no">
-                </div>
-              </div>
-            </li>
-            <li class="price__item  price__item--active  slider__item">
-              <div class="price__header  price__header--hit">
-                <h3 class="price__title">Стандарт</h3>
-                  <span class="price__rate">3.99 USD</span>
-              </div>
-              <div class="price__body">
-                <div class="price__attribute">
-                Розовый фильтр
-                </div>
-                <div class="price__value  price__value--yes">
-                </div>
-                <div class="price__attribute">
-                    Смайлики
-                </div>
-                <div class="price__value  price__value--yes">
-                </div>
-                <div class="price__attribute">
-                  Комментарии
-                </div>
-                <div class="price__value  price__value--no">
-                </div>
-              </div>
-            </li>
-            <li class="price__item  slider__item">
-              <div class="price__header  price__header">
-                <h3 class="price__title">Анлим</h3>
-                  <span class="price__rate">9.99 USD</span>
-              </div>
                 <div class="price__body">
-                  <div class="price__attribute">
-                  Розовый фильтр
+                  <div class="price__row">
+                    <div class="price__attribute">
+                    Розовый фильтр
+                    </div>
+                    <div class="price__value  price__value--yes">
+                    </div>
                   </div>
-                  <div class="price__value  price__value--yes">
-                  </div>
-                  <div class="price__attribute">
-                      Смайлики
-                  </div>
-                  <div class="price__value  price__value--yes">
-                  </div>
-                  <div class="price__attribute">
-                    Комментарии
-                  </div>
-                  <div class="price__value  price__value--yes">
+                  <div class="price__row">
+                    <div class="price__attribute">
+                        Смайлики
+                    </div>
+                    <div class="price__value  price__value--no">
+                    </div>
+                </div>
+                  <div class="price__row">
+                    <div class="price__attribute">
+                      Комментарии
+                    </div>
+                    <div class="price__value  price__value--no">
+                    </div>
                   </div>
                 </div>
-            </li>
-          </ul>
+              </li>
+              <li class="slider__item  price__item">
+                <div class="price__header  price__header--hit">
+                  <h3 class="price__title">Стандарт</h3>
+                    <span class="price__rate">3,99 USD</span>
+                </div>
+                <div class="price__body">
+                  <div class="price__row">
+                    <div class="price__attribute">
+                    Розовый фильтр
+                    </div>
+                    <div class="price__value  price__value--yes">
+                    </div>
+                  </div>
+                  <div class="price__row">
+                    <div class="price__attribute">
+                        Смайлики
+                    </div>
+                    <div class="price__value  price__value--yes">
+                    </div>
+                  </div>
+                  <div class="price__row">
+                    <div class="price__attribute">
+                      Комментарии
+                    </div>
+                    <div class="price__value  price__value--no">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item  price__item">
+                <div class="price__header  price__header">
+                  <h3 class="price__title">Анлим</h3>
+                    <span class="price__rate">9,99 USD</span>
+                </div>
+                  <div class="price__body">
+                    <div class="price__row">
+                      <div class="price__attribute">
+                      Розовый фильтр
+                      </div>
+                      <div class="price__value  price__value--yes">
+                      </div>
+                    </div>
+                    <div class="price__row">
+                      <div class="price__attribute">
+                          Смайлики
+                      </div>
+                      <div class="price__value  price__value--yes">
+                      </div>
+                    </div>
+                    <div class="price__row">
+                      <div class="price__attribute">
+                        Комментарии
+                      </div>
+                      <div class="price__value  price__value--yes">
+                    </div>
+                    </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
           <div class="price__toggles slider__toggles">
-          <label class="slider__toggle" for="price-input-1">1</label>
-          <label class="slider__toggle" for="price-input-2">2</label>
-          <label class="slider__toggle" for="price-input-3">3</label>
+            <label class="price__toggle  price__toggle--1" for="price-input-1"></label>
+            <label class="price__toggle  price__toggle--2" for="price-input-2"></label>
+            <label class="price__toggle  price__toggle--3" for="price-input-3"></label>
           </div>
         </div>
       </section>
@@ -226,7 +247,7 @@
         <b class="callback__headers">Пишите:</b>
         <a href="mailto:mail@htmlacademy.ru" class="callback__anchors">mail@htmlacademy.ru</a>
         <b class="callback__headers">Приезжайте в гости:</b>
-        <a href="#" class="callback__anchors">ул. Большая Конюшенная, 19/8</a>
+        <a href="#" class="callback__anchors">ул. Большая<br>Конюшенная, 19/8</a>
       </section>
     </footer>
   </body>

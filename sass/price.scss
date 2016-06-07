@@ -1,45 +1,110 @@
 .price {
-
+  padding-top: 90px;
+  background: #f2f2f2;
 }
 .price__wrapper {
 
 }
 .price__list {
-
+@include ul-reset;
 }
 .price__item {
-
-&--active {
-
-}
-}
-.price__header {
-
-&--hit {
-
-}
-}
-.price__title {
-
-}
-.price__rate {
-
-}
-.price__body {
-
-}
-.price__attribute {
-
-}
-.price__value {
-
-  &--yes {
+  display: inline-block;
+  width: 280px;
+  &--active {
 
   }
-  &--no {
+}
+.price__header {
+  background: $dark-blue;
+  border: 1px solid white;
+  &--hit {
 
+  }
+}
+.price__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin: 0;
+}
+.price__rate {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.price__body {
+  font-size: 0;
+  background: #fff;
+}
+.price__row {
+  outline: 2px solid #e5e5e5;
+}
+.price__attribute {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  text-transform: uppercase;
+  padding: 25px;
+  width: 150px;
+}
+.price__value {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 80px;
+  &--yes {
+    background: #fff url("../img/icon-yes.svg") center no-repeat;
+    background-size:  31px, 21px;
+  }
+  &--no {
+    background: #fff url("../img/icon-no.svg") center no-repeat;
+    background-size:  27px, 26px;
   }
 }
 .price__toggles {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.price__toggle {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, .3);
+  margin: 0 7px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+#price-input-1:checked ~ .price__toggles .price__toggle--1,
+#price-input-2:checked ~ .price__toggles .price__toggle--2,
+#price-input-3:checked ~ .price__toggles .price__toggle--3 {
+    background-color: #fff;
+    border: 3px solid #283645;
+    box-sizing: border-box;
+    width: 11px;
+    height: 11px;
+}
 
+#price-input-1:checked ~ .slider__inner .slider__slides {
+    transform: translate(20px);
+}
+#price-input-2:checked ~ .slider__inner .slider__slides {
+    transform: translate(-260px);
+}
+#price-input-3:checked ~ .slider__inner .slider__slides {
+    transform: translate(-520px);
 }

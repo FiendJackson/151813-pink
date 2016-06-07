@@ -2,11 +2,29 @@
 
 }
 .callback__title {
-
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  background: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0;
 }
 .callback__headers {
-
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 .callback__anchors {
-  
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $pink;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 25px;
 }
