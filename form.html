@@ -11,7 +11,7 @@
         <div class="main-nav__header">
           <div class="main-nav__wrapper">
             <div class="main-nav__logo">
-              <img class="main-nav-header__image" src="" alt="logotype-white-mobile.svg" title="Pink" width="75" height="22">
+              <img class="main-nav-header__image" src="img/logo-pink-white-mobile.svg" alt="Pink" title="Pink" width="75" height="22">
             </div>
             <a class="main-nav__toogle  main-nav__toogle--closed" href="#"></a> <!-- Гамбургер -->
           </div>
@@ -37,7 +37,7 @@
         </nav>
       <section class="promo">
         <div class="promo__wrapper">
-          <div class="promo__header">
+          <div class="promo__header  promo__header--short">
             <h1 class="promo__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
           </div>
         </div>
@@ -46,8 +46,7 @@
     <main class="page-body">
       <section class="form">
         <p class="page-body__description">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br>
-          Пожалуйста, заполните форму ниже:
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
         <form class="form__body" method="get" name="form" action="form.php">
           <div class="form__block">
@@ -63,27 +62,27 @@
               <legend class="form__legend">ваши безбашенные достижения в путешествии</legend>
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="shark" checked>
-                Сделал селфи с акулой
+                <span class="form__checkbox-text">Сделал селфи с акулой</span>
               </label>
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="sunburn" checked>
-                Обгорел на пляже
+                <span class="form__checkbox-text">Обгорел на пляже</span>
               </label>
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="chuck">
-                Видел Чака Норриса
+                <span class="form__checkbox-text">Видел Чака Норриса</span>
               </label>
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="souvenirs">
-                Накупил сувениров
+                <span class="form__checkbox-text">Накупил сувениров</span>
               </label>
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="tower" checked>
-                Удержал башню
+                <span class="form__checkbox-text">Удержал башню</span>
               </label>
               <label class="form__label">
                 <input class="form__checkbox" type="checkbox" name="hotel">
-                Разгромил отель
+                <span class="form__checkbox-text">Разгромил отель</span>
               </label>
             </fieldset>
           </div>
@@ -97,23 +96,22 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">с каким приложением путешествовали?</legend>
               <label class="form__label">
-                <input class="form__radio" type="radio" name="ios" checked>
-                Pink для iOS
+                <input class="form__radio" type="radio" name="radio" value="iOS" checked>
+                <span class="form__radio-text">Pink для iOS</span>
               </label>
               <label class="form__label">
-                <input class="form__radio" type="radio" name="android">
-                Pink на Android
+                <input class="form__radio" type="radio" name="radio" value="Android">
+                <span class="form__radio-text">Pink на Android</span>
               </label>
               <label class="form__label">
-                <input class="form__radio" type="radio" name="windows">
-                Windows Phone
+                <input class="form__radio" type="radio" name="radio" value="Windows">
+                <span class="form__radio-text">Windows Phone</span>
               </label>
             </fieldset>
           </div>
           <div class="form__block">
-            <b class="form__header">опишите свои эмоции</b>
-            <textarea class="form__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </textarea>
+            <label class="form__header  form__header--textfield">опишите свои эмоции</label>
+            <textarea class="form__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <button type="submit" class="form__button">Отправить форму</button>
           <p class="form__notice">
@@ -123,8 +121,8 @@
       </section>
     </main>
     <footer class="content-footer">
-      <a class="content-footer__logo" href="#">
-        <img class="content-footer__image" src="#" width="147" height="40" alt="footerlogo.svg">
+      <a href="#" class="content-footer__logo">
+        <img class="content-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="footerlogo.svg">
       </a>
       <ul class="content-footer__social-list">
         <li class="content-footer__social-item">
@@ -139,7 +137,7 @@
       </ul>
     <div class="content-footer__signature">
       Разработано
-      <img class="content-footer__image" src="#" width="27" height="34" alt="htmlacademy-logo.svg">
+      <img class="content-footer__academy-logo" src="img/htmlacademy.svg" width="37" height="44" alt="htmlacademy-logo.svg">
     </div>
     </footer>
   </body>
