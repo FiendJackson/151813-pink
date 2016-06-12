@@ -1,8 +1,31 @@
 $dark-blue: #283645;
 $pink: #d22856;
 $opensans: 'Open Sans', sans-serif;
+$tablet-widths: 'min-width: 768px';
+$desktop-widths: 'min-width: 1200px';
 @mixin ul-reset() {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@mixin container() {
+  max-width: 320px;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    max-width: 700px;
+  }
+  @media ($desktop-widths) {
+    max-width: 1200px;
+  }
+}
+@mixin wrapper() {
+  @media ($tablet-widths) {
+
+  }
+
+
+  @media ($desktop-widths) {
+    width: 980px;
+    margin: 0 auto;
+  }
 }

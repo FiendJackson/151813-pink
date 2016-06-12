@@ -16,6 +16,12 @@ display: none;
 .slider__item {
   width: 320px;
   display: inline-block;
+  @media ($tablet-widths) {
+    width: 700px;
+  }
+  @media ($desktop-widths) {
+    width: 1200px;
+  }
 }
 .slider__toggles {
   width: 100%;

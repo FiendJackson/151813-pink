@@ -62,7 +62,19 @@ background: #fff;
 }
 #reviews-input-2:checked ~ .slider__inner .slider__slides {
     transform: translate(-320px);
+    @media ($tablet-widths) {
+        transform: translate(-700px);
+    }
+    @media ($desktop-widths) {
+        transform: translate(-1200px);
+    }
 }
 #reviews-input-3:checked ~ .slider__inner .slider__slides {
     transform: translate(-640px);
+    @media ($tablet-widths) {
+        transform: translate(-1400px);
+    }
+    @media ($desktop-widths) {
+        transform: translate(-2400px);
+    }
 }
