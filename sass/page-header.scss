@@ -1,3 +1,14 @@
 .page-header {
-  
+  @include container;
+  font-family: $opensans;
+  color: $dark-blue;
+  background: $dark-blue;
+  @media ($tablet-widths) {
+      background: $dark-blue url("../img/bg-back-mobile@1x.jpg");
+      background-size: cover;
+      min-height: 730px;
+  }
+&--short {
+  min-height: 280px;
+}
 }

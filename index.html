@@ -4,20 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__header">
-          <div class="main-nav__wrapper">
+      <nav class="main-nav  main-nav--closed">
+        <div class="main-nav__wrapper">
+          <div class="main-nav__header">
             <div class="main-nav__logo">
               <img class="main-nav-header__image" src="img/logo-pink-white-mobile.svg" alt="Pink" title="Pink" width="75" height="22">
             </div>
             <a class="main-nav__toogle  main-nav__toogle--closed" href="#"></a> <!-- Гамбургер -->
           </div>
-        </div>
-          <div class="main-nav__body">
-            <div class="main-nav__wrapper">
+            <div class="main-nav__body  main-nav__body--closed">
               <ul class="main-nav__list">
                 <li class="main-nav__item  main-nav__item--active">
                   <a class="main-nav__anchor" href="index.html">главная</a>
@@ -37,43 +36,47 @@
         </nav>
       <section class="promo">
         <div class="promo__wrapper">
-          <div class="promo__header">
-            <h1 class="promo__title  promo__title--hidden">Взгляните на жизнь ярче!</h1>
-          </div>
-          <div class="download">
-            <a href="#" class="btn  btn--white">Скачать приложение</a>
-            <ul class="download__list">
-              <li class="download__item">
-                <a class="download__link" href="#">
-                  <img class="download__image" src="img/logo-apple.svg" alt="apple" width="47" height="56" title="apple">
-                </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="#">
-                  <img class="download__image" src="img/logo-android.svg" alt="android" width="47" height="56" title="android">
-                </a>
-              </li>
-              <li class="download__item">
-                <a class="download__link" href="#">
-                  <img class="download__image" src="img/logo-microsoft.svg" alt="microsoft" width="47" height="56" title="microsoft">
-                </a>
-              </li>
-            </ul>
-            <p class="download__description">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
+          <div class="promo__block">
+            <div class="promo__header">
+              <h1 class="promo__title  promo__title--hidden">Взгляните на жизнь иначе!</h1>
+            </div>
+            <div class="download">
+              <a href="#" class="btn  btn--white">Скачать приложение</a>
+              <ul class="download__list">
+                <li class="download__item">
+                  <a class="download__link" href="#">
+                    <img class="download__image" src="img/logo-apple.svg" alt="apple" width="47" height="56" title="apple">
+                  </a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link" href="#">
+                    <img class="download__image" src="img/logo-android.svg" alt="android" width="47" height="56" title="android">
+                  </a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link" href="#">
+                    <img class="download__image" src="img/logo-microsoft.svg" alt="microsoft" width="47" height="56" title="microsoft">
+                  </a>
+                </li>
+              </ul>
+              <p class="download__description">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </header>
     <main class="page-body">
       <section class="advantages">
-        <p class="advantages__title">
-          Устали от серости мегаполиса?
-        </p>
-        <p class="advantages__title">
-          Нам есть, что вам предложить!
-        </p>
+        <div class="advantages__header">
+          <p class="advantages__title">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="advantages__title">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">

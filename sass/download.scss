@@ -1,5 +1,8 @@
 .download {
-
+  background: #283645;
+  @media ($tablet-widths) {
+    background: none;
+  }
 }
 
 .download__list {
@@ -31,4 +34,7 @@
   text-align: center;
   padding-bottom: 30px;
   margin: 0;
+  @media ($tablet-widths) {
+    font-size: 18px;
+  }
 }

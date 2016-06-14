@@ -1,4 +1,7 @@
 .content-footer {
+  @include container;
+  font-family: $opensans;
+  color: $dark-blue;
   padding-top: 35px;
   text-align: center;
 }
