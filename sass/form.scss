@@ -3,6 +3,10 @@
 }
 .form__body {
 
+  @media ($desktop-widths) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .form__block {
 
