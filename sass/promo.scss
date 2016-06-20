@@ -1,12 +1,11 @@
 .promo {
-  min-height: 620px;
+  min-height: 743px;
   box-sizing: border-box;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
   @media ($tablet-widths) {
-    display: flex;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
     background-position: 200px 125px;
     background-size: 450px;
-    background-repeat: no-repeat;
   }
   @media ($desktop-widths) {
     background-position: 570px bottom;
@@ -19,9 +18,6 @@
 .promo__wrapper {
   @include wrapper;
   @media ($tablet-widths) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 
   }
     @media ($desktop-widths) {
@@ -36,27 +32,14 @@
  }
 .promo__block {
   @media ($tablet-widths) {
-    width: 50%;
+
   }
   @media ($desktop-widths) {
-    width: 30%;
+    width: 300px;
+    padding-left: 10px;
   }
 }
-.promo__header {
-  min-height: 462px;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom, center;
-  background-repeat: no-repeat;
-  @media ($tablet-widths) {
-    min-height: auto;
-    background: none;
-  }
-  &--short {
-    min-height: auto;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-position: center;
-  }
-}
+
 .promo__title {
   font-size: 24px;
   line-height: 30px;
@@ -70,6 +53,13 @@
     line-height: 50px;
     padding-bottom: 0;
     padding-right: 60px;
+  }
+  @media ($desktop-widths) {
+    font-size: 50px;
+    padding: 0;
+    line-height: 60px;
+    padding-top: 110px;
+    padding-bottom: 50px;
   }
   &--hidden {
     display: none;

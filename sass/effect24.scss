@@ -1,0 +1,55 @@
+.effect24 {
+  background: #f2f2f2;
+
+  &__wrapper {
+    @include wrapper;
+    @media ($desktop-widths) {
+      display: flex;
+      justify-content: space-between;
+      padding: 110px 0 95px;
+    }
+  }
+
+  &__clock {
+    margin-left: 35px;
+    width: 220px;
+    height: 220px;
+    border: 15px solid $pink;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  &__number {
+    display: block;
+    padding-top: 23px;
+    font-size: 120px;
+    font-weight: bold;
+    color: $pink;
+
+  }
+
+  &__content {
+    width: 585px;
+  }
+
+  &__header {
+    font-size: 30px;
+    margin: 0;
+    padding-top: 20px;
+
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    padding: 20px 0 32px;
+  }
+
+  &__anchor {
+    font-size: 18px;
+    color: $pink;
+    text-decoration: underline;
+  }
+
+}

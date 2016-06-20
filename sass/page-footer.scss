@@ -1,5 +1,8 @@
 .page-footer {
-  @include container;
   font-family: $opensans;
   color: $dark-blue;
+}
+
+.page-footer__container {
+  @include container;
 }
