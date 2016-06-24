@@ -4,11 +4,11 @@
 .advantages__header {
     background: #ffffff;
     padding-bottom: 30px;
+
     @media ($tablet-widths) {
 
     }
     @media ($desktop-widths) {
-
     }
 }
 .advantages__title {
@@ -25,13 +25,15 @@
     line-height: 60px;
     padding-top: 67px;
     &--last {
-      padding: 0 240px;
+    padding: 0 120px;
     }
   }
 
 }
 .advantages__wrapper {
   @include wrapper;
+}
+.advantages__screenshots {
   max-height: 790px;
   @media ($tablet-widths) {
     display: flex;

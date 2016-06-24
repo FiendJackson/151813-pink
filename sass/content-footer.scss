@@ -5,8 +5,9 @@
   text-align: center;
 }
 .content-footer__wrapper {
+  display: none;
   @include wrapper;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     display: flex;
   }
 }

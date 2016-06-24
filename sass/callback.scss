@@ -10,6 +10,33 @@
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0;
+  @media ($desktop-widths) {
+    font-size: 50px;
+    line-height: 57px;
+    padding-top: 35px;
+  }
+}
+.callback__wrapper {
+  @include wrapper;
+  display: flex;
+  @media ($desktop-widths) {
+    justify-content: space-around;
+
+  }
+}
+.callback__element {
+  padding-top: 20px;
+  padding-left: 15px;
+  &--email {
+    @media ($desktop-widths) {
+      order: 1;
+    }
+  }
+  &--adress {
+    @media ($desktop-widths) {
+
+    }
+  }
 }
 .callback__headers {
   display: block;
@@ -27,4 +54,7 @@
   text-align: center;
   text-decoration: none;
   padding-bottom: 25px;
+  @media ($desktop-widths) {
+    padding-top: 20px;
+  }
 }

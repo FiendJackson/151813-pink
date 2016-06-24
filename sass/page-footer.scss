@@ -6,3 +6,24 @@
 .page-footer__container {
   @include container;
 }
+.page-footer__map {
+  position: relative;
+  max-width: 1200px;
+  max-height: 500px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -7.5px;
+    width: 15px;
+    height: 15px;
+    background: $pink;
+    z-index: 1;
+    border: 10px solid white;
+    border-radius: 50%;
+  }
+}

@@ -71,14 +71,16 @@
       <div class="page-body__container">
         <section class="advantages">
           <div class="advantages__header">
-            <p class="advantages__title">
-              Устали от серости мегаполиса?
-            </p>
-            <p class="advantages__title  advantages__title--last">
-              Нам есть, что вам предложить!
-            </p>
+            <div class="advantages__wrapper">
+              <p class="advantages__title">
+                Устали от серости мегаполиса?
+              </p>
+              <p class="advantages__title  advantages__title--last">
+                Нам есть, что вам предложить!
+              </p>
+            </div>
           </div>
-          <div class="advantages__wrapper">
+          <div class="advantages__wrapper  advantages__screenshots">
             <div class="advantages__screen">
               <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" alt="iphone screen" width="157" height="320" title="iPhone screen">
             </div>
@@ -133,19 +135,28 @@
                 <li class="reviews__item  reviews__item--active  slider__item">
                   <b class="reviews__name">Николай Петров</b>
                   <p class="reviews__text">
-                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    <span class="reviews__qq">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__qq">»</span>
+                  </p>
+                  <p class="reviews__signature">
+                    25 лет, водитель трамвая
                   </p>
                 </li>
                 <li class="reviews__item  slider__item">
                   <b class="reviews__name">Николай Петров</b>
                   <p class="reviews__text">
-                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    <span class="reviews__qq">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__qq">»</span>
+                  </p>
+                  <p class="reviews__signature">
+                    25 лет, водитель трамвая
                   </p>
                 </li>
                 <li class="reviews__item  slider__item">
                   <b class="reviews__name">Николай Петров</b>
                   <p class="reviews__text">
-                    «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                    <span class="reviews__qq">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="reviews__qq">»</span>
+                  </p>
+                  <p class="reviews__signature">
+                    25 лет, водитель трамвая
                   </p>
                 </li>
               </ul>
@@ -164,6 +175,25 @@
             <input class="slider__input" type="radio" name="price" id="price-input-3">
             <div class="slider__inner">
               <ul class="price__list  slider__slides">
+                <li class="slider__item  price__item  price__item--left">
+                  <div class="price__body  price__body--left">
+                    <div class="price__row">
+                      <div class="price__option">
+                        Розовый фильтр
+                      </div>
+                    </div>
+                    <div class="price__row">
+                      <div class="price__option">
+                        Смайлики
+                      </div>
+                  </div>
+                    <div class="price__row">
+                      <div class="price__option">
+                        Комментарии
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li class="slider__item  price__item">
                   <div class="price__header">
                     <h3 class="price__title">База</h3>
@@ -262,20 +292,51 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer  content-footer">
       <div class="page-footer__container">
         <section class="callback">
           <p class="callback__title">
             Остались вопросы?<br>
             Свяжитесь с нами!
           </p>
-          <b class="callback__headers">Звоните:</b>
-          <a href="tel:+78125556666" class="callback__anchors">+7 (812) 555-66-66</a>
-          <b class="callback__headers">Пишите:</b>
-          <a href="mailto:mail@htmlacademy.ru" class="callback__anchors">mail@htmlacademy.ru</a>
-          <b class="callback__headers">Приезжайте в гости:</b>
-          <a href="#" class="callback__anchors">ул. Большая<br>Конюшенная, 19/8</a>
+          <div class="callback__wrapper">
+            <div class="callback__element">
+              <b class="callback__headers">Звоните:</b>
+              <a href="tel:+78125556666" class="callback__anchors">+7 (812) 555-66-66</a>
+            </div>
+            <div class="callback__element callback__element--email">
+              <b class="callback__headers">Пишите:</b>
+              <a href="mailto:mail@htmlacademy.ru" class="callback__anchors">mail@htmlacademy.ru</a>
+            </div>
+            <div class="callback__element  callback__element--adress">
+              <b class="callback__headers">Приезжайте в гости:</b>
+              <a href="#" class="callback__anchors">ул. Большая<br>Конюшенная, 19/8</a>
+            </div>
+          </div>
         </section>
+      </div>
+      <div class="page-footer__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Xzl4hSTlgY2aDMNm0bViOrs0O2MM6a0j&width=100%&height=500&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+      </div>
+      <div class="content-footer__wrapper">
+        <a href="#" class="content-footer__logo">
+          <img class="content-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="footerlogo.svg">
+        </a>
+        <ul class="content-footer__social-list">
+          <li class="content-footer__social-item">
+            <a class="content-footer__social-link  content-footer__social-link--tw" href="#"></a>
+          </li>
+          <li class="content-footer__social-item">
+            <a class="content-footer__social-link  content-footer__social-link--fb" href="#"></a>
+          </li>
+          <li class="content-footer__social-item">
+            <a class="content-footer__social-link  content-footer__social-link--yb" href="#"></a>
+          </li>
+        </ul>
+        <div class="content-footer__signature">
+          Разработано
+          <img class="content-footer__academy-logo" src="img/htmlacademy.svg" width="37" height="44" alt="htmlacademy-logo.svg">
+        </div>
       </div>
     </footer>
   </body>

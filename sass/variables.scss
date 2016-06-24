@@ -19,6 +19,8 @@ $desktop-widths: 'min-width: 960px';
   }
 }
 @mixin wrapper() {
+  max-width: 320px;
+  margin: 0 auto;
   @media ($tablet-widths) {
     max-width: 660px;
     margin: 0 auto;
