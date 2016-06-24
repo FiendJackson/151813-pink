@@ -8,55 +8,59 @@
   </head>
   <body>
     <header class="page-header  page-header--short">
-      <nav class="main-nav  main-nav--closed">
-        <div class="main-nav__wrapper">
-          <div class="main-nav__header">
-            <div class="main-nav__logo">
-              <img class="main-nav-header__image" src="img/logo-pink-white-mobile.svg" alt="Pink" title="Pink" width="75" height="22">
+      <div class="page-header__container">
+        <nav class="main-nav  main-nav--closed">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__header">
+              <div class="main-nav__logo">
+                <img class="main-nav-header__image" src="img/logo-pink-white-mobile.svg" alt="Pink" title="Pink" width="75" height="22">
+              </div>
+              <a class="main-nav__toogle  main-nav__toogle--closed" href="#"></a> <!-- Гамбургер -->
             </div>
-            <a class="main-nav__toogle  main-nav__toogle--closed" href="#"></a> <!-- Гамбургер -->
-          </div>
-            <div class="main-nav__body  main-nav__body--closed">
-              <ul class="main-nav__list">
-                <li class="main-nav__item  main-nav__item--active">
-                  <a class="main-nav__anchor" href="index.html">главная</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__anchor" href="photo.html">фотографии</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__anchor" href="form.html">конкурс</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__anchor" href="http://htmlacademy.ru" target="_blank">html academy</a>
-                </li>
-              </ul>
+              <div class="main-nav__body  main-nav__body--closed">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item  main-nav__item--active">
+                    <a class="main-nav__anchor" href="index.html">главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__anchor" href="photo.html">фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__anchor" href="form.html">конкурс</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__anchor" href="http://htmlacademy.ru" target="_blank">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <section class="promo  promo--short">
+          <div class="promo__wrapper">
+            <div class="promo__header  promo__header--short">
+              <h1 class="promo__title  promo__title--short">Фотографии<br>пользователей</h1>
             </div>
           </div>
-        </nav>
-      <section class="promo  promo--short">
-        <div class="promo__wrapper">
-          <div class="promo__header  promo__header--short">
-            <h1 class="promo__title">Фотографии пользователей</h1>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </header>
     <main class="page-body">
+      <p class="page-body__description  page-body__description--gallery">
+      Взгляните на фотографии, которые выкладывают пользователи!<br>
+      Видите, как не хватает ваших?
+      </p>
       <section class="gallery">
-        <p class="page-body__description  page-body__description--gallery">
-        Взгляните на фотографии, которые выкладывают пользователи!<br>
-        Видите, как не хватает ваших?
-        </p>
         <div class="gallery__item  gallery__item--panorama">
           <img class="gallery__image  gallery__image--fullwidth" src="img/panorama-mobile@1x.jpg" width="100%" alt="panorama.jpg">
           <div class="gallery__info  gallery__info--panorama">
-            <b class="gallery__name">Анна</b>
-            <span class="gallery__date">(5 минут назад)</span>
-            <p class="gallery__message">
+            <p class="gallery__author">
+              <b class="gallery__name">Анна</b>
+              <span class="gallery__date">(5 минут назад)</span>
+            </p>
+            <p class="gallery__message  gallery__message--panorama">
               Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
             </p>
-            <div class="gallery__like-block">
+            <div class="gallery__like-block  gallery__like-block--panorama">
               <a class="gallery__like" href="#">
                 <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
               </a>
@@ -65,152 +69,172 @@
             </div>
           </div>
         </div>
-        <div class="gallery__item">
-          <img class="gallery__image" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo.jpg">
-          <div class="gallery__info">
-            <b class="gallery__name">Левон</b>
-            <span class="gallery__date">(5 часов назад)</span>
-            <p class="gallery__message">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <div class="gallery__like-block">
-              <a class="gallery__like" href="#">
-                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
-              </a>
-              <span class="gallery__like-text">нравится:</span>
-              <span class="gallery__like-count">356</span>
+        <div class="gallery__wrapper">
+          <div class="gallery__item">
+            <img class="gallery__image" src="img/photo-1-mobile@1x.jpg" width="300" height="180" alt="photo.jpg">
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Левон</b>
+                <span class="gallery__date">(5 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">356</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="gallery__item">
-          <img class="gallery__image" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo.jpg">
-          <div class="gallery__info">
-            <b class="gallery__name">Антон</b>
-            <span class="gallery__date">(12 часов назад)</span>
-            <p class="gallery__message">
-              Соседи будут рады!
-            </p>
-            <div class="gallery__like-block">
-              <a class="gallery__like" href="#">
-                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
-              </a>
-              <span class="gallery__like-text">нравится:</span>
-              <span class="gallery__like-count">666</span>
+          <div class="gallery__item">
+            <img class="gallery__image" src="img/photo-2-mobile@1x.jpg" width="300" height="180" alt="photo.jpg">
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Антон</b>
+                <span class="gallery__date">(12 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Соседи будут рады!
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">666</span>
+              </div>
+            </div>
+            </div>
+          <div class="gallery__item">
+            <img class="gallery__image" src="img/photo-3-mobile@1x.jpg" width="300" height="180" alt="photo.jpg">
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Борис</b>
+                <span class="gallery__date">(20 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">215</span>
+              </div>
             </div>
           </div>
-          </div>
-        <div class="gallery__item">
-          <img class="gallery__image" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo.jpg">
-          <div class="gallery__info">
-            <b class="gallery__name">Борис</b>
-            <span class="gallery__date">(20 часов назад)</span>
-            <p class="gallery__message">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <div class="gallery__like-block">
-              <a class="gallery__like" href="#">
-                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
-              </a>
-              <span class="gallery__like-text">нравится:</span>
-              <span class="gallery__like-count">215</span>
+          <div class="gallery__item">
+            <img class="gallery__image" src="img/photo-4-mobile@1x.jpg" width="300" height="180" alt="photo.jpg">
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Сергей</b>
+                <span class="gallery__date">(25 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Самая кубанская в мире!
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">4</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="gallery__item">
-          <img class="gallery__image" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo.jpg">
-          <div class="gallery__info">
-            <b class="gallery__name">Сергей</b>
-            <span class="gallery__date">(25 часов назад)</span>
-            <p class="gallery__message">
-              Самая кубанская в мире!
-            </p>
-            <div class="gallery__like-block">
-              <a class="gallery__like" href="#">
-                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
-              </a>
-              <span class="gallery__like-text">нравится:</span>
-              <span class="gallery__like-count">4</span>
+          <div class="gallery__item">
+            <img class="gallery__image" src="img/photo-5-mobile@1x.jpg" width="300" height="180" alt="photo.jpg">
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Максим</b>
+                <span class="gallery__date">(40 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Где снег то?
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">150</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="gallery__item">
-          <img class="gallery__image" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo.jpg">
-          <div class="gallery__info">
-            <b class="gallery__name">Максим</b>
-            <span class="gallery__date">(40 часов назад)</span>
-            <p class="gallery__message">
-              Где снег то?
-            </p>
-            <div class="gallery__like-block">
-              <a class="gallery__like" href="#">
-                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
-              </a>
-              <span class="gallery__like-text">нравится:</span>
-              <span class="gallery__like-count">150</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery__item">
-          <img class="gallery__image" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo.jpg">
-          <div class="gallery__info">
-            <b class="gallery__name">Надежда</b>
-            <span class="gallery__date">(45 часов назад)</span>
-            <p class="gallery__message">
-              Всем GM и взаимные лайки!
-            </p>
-            <div class="gallery__like-block">
-              <a class="gallery__like" href="#">
-                <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
-              </a>
-              <span class="gallery__like-text">нравится:</span>
-              <span class="gallery__like-count">2560</span>
+          <div class="gallery__item">
+            <img class="gallery__image" src="img/photo-6-mobile@1x.jpg" width="300" height="180" alt="photo.jpg">
+            <div class="gallery__info">
+              <p class="gallery__author">
+                <b class="gallery__name">Надежда</b>
+                <span class="gallery__date">(45 часов назад)</span>
+              </p>
+              <p class="gallery__message">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="gallery__like-block">
+                <a class="gallery__like" href="#">
+                  <img class="gallery__heart" src="img/icon-heart.svg" width="13" height="12" alt="heart.svg">
+                </a>
+                <span class="gallery__like-text">нравится:</span>
+                <span class="gallery__like-count">2560</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <p class="page-body__description  page-body__description--userpost">
+        Затмите их всех!<br>
+        Выкладывайте все, что накопилось в телефоне!
+      </p>
       <section class="userpost">
-        <p class="page-body__description  page-body__description--userpost">
-          Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <img class="userpost__image" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="userimage.jpg">
-        <ul class="userpost__effects">
-          <li class="userpost__effects-item  userpost__effects-item--active">
-            <img class="userpost__effects-icon  userpost__effects-icon--crop" src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
-          </li>
-          <li class="userpost__effects-item">
-            <img class="userpost__effects-icon  userpost__effects-icon--fill" src="img/icon-editor-fill.svg" width="44" height="44" alt="fill">
-          </li>
-          <li class="userpost__effects-item">
-            <img class="userpost__effects-icon  userpost__effects-icon--contrast" src="img/icon-editor-contrast.svg" width="44" height="44" alt="contrast">
-          </li>
-        </ul>
-        <input class="userpost__range" type="range" name="effects" min="0" max="20" value="18">
-        <div class="userpost__buttons">
-          <button class="btn  userpost__btn" type="submit">Запостить</button>
-          <button class="btn  userpost__btn  userpost__btn--disabled" type="button" disabled>Отмена</button>
+        <div class="userpost__wrapper">
+          <img class="userpost__image" src="img/photo-7-mobile@1x.jpg" width="300" height="374" alt="userimage.jpg">
+          <div class="userpost__options">
+            <div class="userpost__effects-item  userpost__effects-item--crop  userpost__effects-item--active">
+              <img class="userpost__effects-icon  userpost__effects-icon--crop" src="img/icon-editor-crop.svg" width="44" height="44" alt="crop">
+              <div class="userpost__range  userpost__range--crop"></div>
+            </div>
+            <div class="userpost__effects-item  userpost__effects-item--fill">
+              <img class="userpost__effects-icon  userpost__effects-icon--fill" src="img/icon-editor-fill.svg" width="44" height="44" alt="fill">
+              <div class="userpost__range  userpost__range--fill"></div>
+            </div>
+            <div class="userpost__effects-item  userpost__effects-item--contrast">
+              <img class="userpost__effects-icon  userpost__effects-icon--contrast" src="img/icon-editor-contrast.svg" width="44" height="44" alt="contrast">
+              <div class="userpost__range  userpost__range--contrast"></div>
+            </div>
+            <div class="userpost__buttons">
+              <button class="userpost__btn" type="submit">Запостить</button>
+              <button class="userpost__btn  userpost__btn--disabled" type="button" disabled>Отмена</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="content-footer">
-      <a href="#" class="content-footer__logo">
-        <img class="content-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="footerlogo.svg">
-      </a>
-      <ul class="content-footer__social-list">
-        <li class="content-footer__social-item">
-          <a class="content-footer__social-link  content-footer__social-link--tw" href="#"></a>
-        </li>
-        <li class="content-footer__social-item">
-          <a class="content-footer__social-link  content-footer__social-link--fb" href="#"></a>
-        </li>
-        <li class="content-footer__social-item">
-          <a class="content-footer__social-link  content-footer__social-link--yb" href="#"></a>
-        </li>
-      </ul>
-    <div class="content-footer__signature">
-      Разработано
-      <img class="content-footer__academy-logo" src="img/htmlacademy.svg" width="37" height="44" alt="htmlacademy-logo.svg">
-    </div>
+      <div class="content-footer__wrapper">
+        <a href="#" class="content-footer__logo">
+          <img class="content-footer__image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="footerlogo.svg">
+        </a>
+        <ul class="content-footer__social-list">
+          <li class="content-footer__social-item">
+            <a class="content-footer__social-link  content-footer__social-link--tw" href="#"></a>
+          </li>
+          <li class="content-footer__social-item">
+            <a class="content-footer__social-link  content-footer__social-link--fb" href="#"></a>
+          </li>
+          <li class="content-footer__social-item">
+            <a class="content-footer__social-link  content-footer__social-link--yb" href="#"></a>
+          </li>
+        </ul>
+        <div class="content-footer__signature">
+          Разработано
+          <img class="content-footer__academy-logo" src="img/htmlacademy.svg" width="37" height="44" alt="htmlacademy-logo.svg">
+        </div>
+      </div>
     </footer>
   </body>
 </html>
