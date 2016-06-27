@@ -47,27 +47,30 @@
     <main class="page-body">
       <div class="page-body__container">
         <section class="form">
-          <p class="page-body__description">
+          <p class="page-body__description  page-body__description--form">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
             <span class="page-body__ask">Пожалуйста заполните форму ниже:</span>
           </p>
           <form class="form__body" method="get" name="form" action="form.php">
             <div class="form__block  form__block--fullname">
-              <label class="form__header" for="surname">фамилия:
+              <label class="form__header" for="surname">
+                <span class="form__signature">фамилия:</span>
                 <input class="form__text" type="text" name="surname" placeholder="Укажите фамилию">
               </label>
 
-              <label class="form__header" for="name">имя:
+              <label class="form__header" for="name">
+                <span class="form__signature">имя:</span>
                 <input class="form__text" type="text" name="name" placeholder="Введите Ваше имя">
               </label>
 
-              <label class="form__header" for="patronymic">отчество:
+              <label class="form__header" for="patronymic">
+                <span class="form__signature">отчество:</span>
                 <input class="form__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </div>
             <div class="form__block  form__block--checkboxes  form__block--grey">
               <fieldset class="form__fieldset">
-                <legend class="form__legend">ваши безбашенные достижения в путешествии</legend>
+                <legend class="form__legend  form__legend--checkboxes">ваши безбашенные достижения в путешествии</legend>
                 <div class="form__checkbox-container">
                   <div class="form__checkbox-group">
                     <label class="form__label">
@@ -103,27 +106,32 @@
               </fieldset>
             </div>
               <div class="form__block  form__block--contactsmobile">
-                <label class="form__header" for="tel">номерок телефончика:</label>
-                <input class="form__tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-                <label class="form__header" for="email">адресок почты:</label>
-                <input class="form__email" type="email" name="email" placeholder="E-mail, пожалуйста">
+                <label class="form__header" for="tel">
+                  <span class="form__signature  form__signature--mobile">номерок телефончика:</span>
+                  <input class="form__tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                </label>
+
+                <label class="form__header" for="email">
+                  <span class="form__signature  form__signature--mobile">адресок почты:</span>
+                  <input class="form__email" type="email" name="email" placeholder="E-mail, пожалуйста">
+                </label>
               </div>
               <div class="form__block  form__block--contacts">
                 <fieldset class="form__fieldset">
                   <legend class="form__legend">Контактная информация</legend>
                   <div class="form__input-container">
                     <div class="form__input-area">
-                      <label class="form__header" for="tel">номер телефона</label>
+                      <label class="form__header  form__header--contacts" for="tel">номер телефона</label>
                       <input class="form__tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
                     </div>
                     <div class="form__input-area">
-                      <label class="form__header" for="email">адрес почты:</label>
+                      <label class="form__header  form__header--contacts" for="email">адрес почты:</label>
                       <input class="form__email" type="email" name="email" placeholder="Введите почту">
                     </div>
                   </div>
                 </fieldset>
               </div>
-            <div class="form__block  form__block--radio">
+            <div class="form__block  form__block--radio  form__block--grey">
               <fieldset class="form__fieldset">
                 <legend class="form__legend">с каким приложением путешествовали?</legend>
                 <label class="form__label">
@@ -141,8 +149,8 @@
               </fieldset>
             </div>
             <div class="form__block  form__block--textarea">
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">опишите свои эмоции</legend>
+              <fieldset class="form__fieldset  form__fieldset--textarea">
+                <legend class="form__legend  form__legend--textarea">опишите свои эмоции</legend>
                 <textarea class="form__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
