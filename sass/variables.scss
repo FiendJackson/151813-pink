@@ -1,8 +1,8 @@
 $dark-blue: #283645;
 $pink: #d22856;
 $opensans: 'Open Sans', sans-serif;
-$tablet-widths: 'min-width: 768px';
-$desktop-widths: 'min-width: 1200px';
+$tablet-widths: 'min-width: 660px';
+$desktop-widths: 'min-width: 960px';
 @mixin ul-reset() {
   margin: 0;
   padding: 0;
@@ -15,17 +15,17 @@ $desktop-widths: 'min-width: 1200px';
     max-width: 700px;
   }
   @media ($desktop-widths) {
-    max-width: 1200px;
+    max-width: 100%;
   }
 }
 @mixin wrapper() {
+  max-width: 320px;
+  margin: 0 auto;
   @media ($tablet-widths) {
-
-  }
-
-
-  @media ($desktop-widths) {
-    width: 980px;
+    max-width: 660px;
     margin: 0 auto;
+  }
+  @media ($desktop-widths) {
+    max-width: 960px;
   }
 }

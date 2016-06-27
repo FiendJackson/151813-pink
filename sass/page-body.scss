@@ -1,17 +1,25 @@
 .page-body {
-  @include container;
   font-family: $opensans;
   color: $dark-blue;
-}
-.page-body__description {
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  padding: 40px 20px;
-  padding-bottom: 20px;
-  margin: 0;
-  background: #fff;
-  &--gallery,  &--userpost {
-    padding-bottom: 50px;
+
+  &__container {
+    @include container;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    background: #fff;
+    &--gallery,  &--userpost {
+      padding-bottom: 50px;
+    }
+    @media ($desktop-widths) {
+      padding: 90px 100px;
+      font-size: 18px;
+    }
   }
 }

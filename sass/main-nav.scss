@@ -11,7 +11,7 @@
   }
   @media ($desktop-widths) {
     min-height: auto;
-    width: 350px;
+    min-width: 310px;
   }
 }
 .main-nav__wrapper {
@@ -46,8 +46,7 @@
   font-family: $opensans;
   @include ul-reset;
   @media ($desktop-widths) {
-    display: flex;
-    justify-content: space-around;
+    padding-left: 18px;
     background: none;
   }
 }
@@ -59,7 +58,12 @@
 
   }
   @media ($desktop-widths) {
+    display: inline-block;
     border: none;
+    padding-right: 75px;
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 .main-nav__anchor {

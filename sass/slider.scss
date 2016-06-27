@@ -12,6 +12,9 @@ display: none;
     width: 300%;
     transition: transform .8s ease;
     font-size: 0;
+    @media ($desktop-widths) {
+      display: flex;
+    }
 }
 .slider__item {
   width: 320px;
@@ -21,6 +24,8 @@ display: none;
   }
   @media ($desktop-widths) {
     width: 1200px;
+    display: flex;
+    flex-direction: column;
   }
 }
 .slider__toggles {
@@ -29,6 +34,9 @@ display: none;
   padding-bottom: 30px;
   z-index: 100;
   text-align: center;
+  @media ($desktop-widths) {
+    display: none;
+  }
 }
 .slider__toggle {
 

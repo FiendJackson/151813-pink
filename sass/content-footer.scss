@@ -1,9 +1,15 @@
 .content-footer {
-  @include container;
   font-family: $opensans;
   color: $dark-blue;
   padding-top: 35px;
   text-align: center;
+}
+.content-footer__wrapper {
+  display: none;
+  @include wrapper;
+  @media ($tablet-widths) {
+    display: flex;
+  }
 }
 .content-footer__logo {
 
@@ -16,6 +22,9 @@
   @include ul-reset;
   font-size: 0;
   padding-bottom: 40px;
+  @media ($desktop-widths) {
+    margin: auto;
+  }
 }
 .content-footer__social-item {
   display: inline-block;
