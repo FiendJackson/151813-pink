@@ -1,55 +1,103 @@
 .effect24 {
-  background: #f2f2f2;
+  display: none;
+  @media ($tablet-widths) {
+    display: block;
+    background: #fff;
+  }
+  @media ($desktop-widths) {
+    background: #f2f2f2;
+  }
 
   &__wrapper {
     @include wrapper;
-    @media ($desktop-widths) {
+    @media ($tablet-widths) {
       display: flex;
       justify-content: space-between;
+      padding: 55px 0 100px;
+    }
+    @media ($desktop-widths) {
       padding: 110px 0 95px;
     }
   }
 
   &__clock {
-    margin-left: 35px;
+    @media ($tablet-widths) {
+      width: 175px;
+      height: 175px;
+      border: 15px solid $pink;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 35px;
+      align-self: center;
+      margin-top: 40px;
+    }
+    @media ($desktop-widths) {
     width: 220px;
     height: 220px;
-    border: 15px solid $pink;
-    border-radius: 50%;
-    text-align: center;
+    align-self: none;
+    margin-top: 0;
+    }
   }
 
   &__number {
-    display: block;
-    padding-top: 23px;
-    font-size: 120px;
-    font-weight: bold;
-    color: $pink;
+    @media ($tablet-widths) {
+      display: block;
+      padding-top: 16px;
+      font-size: 96px;
+      font-weight: bold;
+      color: $pink;
+    }
+    @media ($desktop-widths) {
+      font-size: 120px;
+      padding-top: 23px;
+    }
+
 
   }
 
   &__content {
-    width: 585px;
+    @media ($tablet-widths) {
+      width: 330px;
+    }
+    @media ($desktop-widths) {
+      width: 585px;
+    }
   }
 
   &__header {
     font-size: 30px;
     margin: 0;
     padding-top: 20px;
-
+    padding-right: 130px;
+    @media ($desktop-widths) {
+      padding-right: 0;
+    }
   }
 
   &__text {
+    @media ($tablet-widths) {
+      font-size: 14px;
+      line-height: 25px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 5px;
+    }
+    @media ($desktop-widths) {
     font-size: 18px;
-    line-height: 30px;
-    margin: 0;
     padding: 20px 0 32px;
+    padding-right: 40px;
+    }
   }
 
   &__anchor {
-    font-size: 18px;
+    @media ($tablet-widths) {
+    font-size: 14px;
     color: $pink;
     text-decoration: underline;
+    }
+    @media ($desktop-widths) {
+      font-size: 18px;
+    }
   }
 
 }

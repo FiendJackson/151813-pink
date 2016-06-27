@@ -10,12 +10,12 @@
 @include ul-reset;
 }
 .reviews__item {
-  @media ($desktop-widths) {
-  display: flex;
-  flex-direction: column;
-  }
-  &--active {
-
+  @media ($tablet-widths) {
+    display: none;
+    &--active {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .reviews__name {
@@ -26,6 +26,10 @@
   text-align: center;
   padding-top: 40px;
   order: 1;
+  @media ($tablet-widths) {
+    font-size: 20px;
+    padding-top: 35px;
+  }
   @media ($desktop-widths) {
     font-size: 24px;
     padding-top: 36px;
@@ -38,12 +42,13 @@
     font-size: 14px;
     text-align: center;
     order: 3;
-    padding-bottom: 40px;
+    padding-top: 8px;
     margin: 0;
   }
   @media ($desktop-widths) {
     font-size: 18px;
     padding-top: 6px;
+    padding-bottom: 40px;
   }
 }
 .reviews__text {
@@ -54,8 +59,11 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     font-size: 18px;
+    padding-top: 15px;
+  }
+  @media ($desktop-widths) {
     padding: 183px 135px 0;
   }
 }
@@ -97,18 +105,12 @@
 #reviews-input-2:checked ~ .slider__inner .slider__slides {
     transform: translate(-320px);
     @media ($tablet-widths) {
-        transform: translate(-700px);
-    }
-    @media ($desktop-widths) {
-        transform: translate(-1200px);
+    transform: translate(0);
     }
 }
 #reviews-input-3:checked ~ .slider__inner .slider__slides {
     transform: translate(-640px);
     @media ($tablet-widths) {
-        transform: translate(-1400px);
-    }
-    @media ($desktop-widths) {
-        transform: translate(-2400px);
+    transform: translate(0);
     }
 }
