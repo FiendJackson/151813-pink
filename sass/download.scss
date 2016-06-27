@@ -1,7 +1,9 @@
 .download {
   background: #283645;
+  padding-top: 1px;
   @media ($tablet-widths) {
     background: none;
+    padding-top: 0;
   }
 }
 
@@ -35,6 +37,9 @@
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
+  @media ($tablet-widths) {
+    margin-top: 45px;
+  }
   @media ($desktop-widths) {
     margin-top: 70px;
     margin-bottom: 55px;
@@ -67,5 +72,11 @@
   margin: 0;
   @media ($tablet-widths) {
     font-size: 18px;
+    padding-top: 6px;
+    padding-left: 5px;
+  }
+  @media ($desktop-widths) {
+    padding-top: 0;
+    padding-left: 0;
   }
 }

@@ -1,14 +1,18 @@
 .promo {
-  min-height: 743px;
+  display: flex;
+  min-height: 665px;
   box-sizing: border-box;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   @media ($tablet-widths) {
+    display: block;
     background-position: 200px 125px;
     background-size: 450px;
+    min-height: 620px;
   }
   @media ($desktop-widths) {
-    background-position: 570px bottom;
+    background-position: 60% bottom;
+    min-height: 743px;
   }
   &--short {
     min-height: auto;
@@ -16,9 +20,10 @@
   }
 }
 .promo__wrapper {
-  @include wrapper;
+  margin-top: auto;
+  flex-basis: 100%;
   @media ($tablet-widths) {
-
+  @include wrapper;
   }
     @media ($desktop-widths) {
 
@@ -32,10 +37,12 @@
  }
 .promo__block {
   @media ($tablet-widths) {
-
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 60px;
   }
   @media ($desktop-widths) {
-    width: 300px;
+    padding-top: 0;
     padding-left: 10px;
   }
 }
@@ -52,7 +59,12 @@
     font-size: 40px;
     line-height: 50px;
     padding-bottom: 0;
-    padding-right: 60px;
+    padding-right: 20px;
+    &--short {
+      font-size: 50px;
+      line-height: 60px;
+      padding: 70px 30px 80px;
+    }
   }
   @media ($desktop-widths) {
     font-size: 50px;
@@ -60,6 +72,7 @@
     line-height: 60px;
     padding-top: 110px;
     padding-bottom: 50px;
+    padding-right: 0;
     &--short {
       padding-top: 65px;
       padding-bottom: 100px;

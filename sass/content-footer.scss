@@ -5,10 +5,16 @@
   text-align: center;
 }
 .content-footer__wrapper {
-  display: none;
   @include wrapper;
   @media ($tablet-widths) {
     display: flex;
+    justify-content: space-between;
+  }
+  &--hidden {
+    display: none;
+    @media ($tablet-widths) {
+      display: flex;
+    }
   }
 }
 .content-footer__logo {
@@ -22,7 +28,7 @@
   @include ul-reset;
   font-size: 0;
   padding-bottom: 40px;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     margin: auto;
   }
 }
@@ -57,6 +63,9 @@
 .content-footer__signature {
   font-size: 14px;
   line-height: 18px;
+  @media ($desktop-widths) {
+    font-size: 18px;
+  }
 }
 .content-footer__academy-logo {
   vertical-align: middle;

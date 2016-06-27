@@ -14,9 +14,12 @@
 }
 .userpost__wrapper {
   @include wrapper;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     display: flex;
     justify-content: space-around;
+    padding: 50px 10px;
+  }
+  @media ($desktop-widths) {
     padding: 60px;
   }
 }
@@ -27,18 +30,23 @@
   display: block;
   margin: 0 auto;
   padding-top: 20px;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     margin: 0;
     padding-top: 0;
   }
 }
 .userpost__options {
-  @media ($desktop-widths) {
-    display: flex;
-    flex-basis: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media ($tablet-widths) {
+    flex-basis: 280px;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+  }
+  @media ($desktop-widths) {
+    flex-basis: 420px;
   }
 }
 .userpost__effects {
@@ -47,32 +55,45 @@
   text-align: center;
   padding-top: 40px;
   padding-bottom: 30px;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     padding-top: 0;
   }
 }
 .userpost__effects-item {
   display: inline-block;
   vertical-align: top;
-  border-bottom: 1px solid rgba(40, 54, 69, .1);
+  padding-top: 20px;
+  padding-right: 40px;
+  &--contrast {
+    padding-right: 0;
+  }
+  @media ($tablet-widths) {
+    padding: 0;
+    border-bottom: 1px solid rgba(40, 54, 69, .1);
+    &--crop {
+      order: 0;
+    }
+    &--fill {
+      order: 1;
+    }
+    &--contrast {
+      order: 2;
+    }
+  }
   &:last-child {
     padding-right: 0;
   }
   &--active {
 
   }
-  &--crop {
-    order: 0;
-  }
-  &--fill {
-    order: 1;
-  }
-  &--contrast {
-    order: 2;
-  }
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 280px;
+  }
+  @media ($desktop-widths) {
     flex-basis: 100%;
   }
 }
@@ -87,6 +108,12 @@
   &--contrast {
 
   }
+  @media ($tablet-widths) {
+    width: 25px;
+  }
+  @media ($desktop-widths) {
+    width: 45px;
+  }
 }
 
 
@@ -97,26 +124,52 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+  @media ($tablet-widths) {
+    width: 200px;
+  }
+  @media ($desktop-widths) {
+    width: 280px;
+  }
   &--crop {
-
+    display: none;
+    @media ($tablet-widths) {
+      display: block;
+    }
   }
   &--fill {
-
+    display: none;
+    @media ($tablet-widths) {
+      display: block;
+    }
   }
   &--contrast {
-
+    display: none;
+    @media ($tablet-widths) {
+      display: block;
+    }
+  }
+  &--mobile {
+    margin-top: 10px;
+    display: block;
+    @media ($tablet-widths) {
+      display: none;
+    }
   }
   &::before {
     @include roundicon;
-    left: 70px;
+    left: 70%;
   }
   &--fill::before {
     @include roundicon;
-    left: 250px;
+    left: 20%;
   }
   &--contrast::before {
     @include roundicon;
-    left: 160px;
+    left: 50%;
+  }
+  &--mobile::before {
+    @include roundicon;
+    left: 190px;
   }
   &::after {
     content: "";
@@ -126,22 +179,32 @@
     width: 280px;
     height: 2px;
     background: $dark-blue;
+    @media ($tablet-widths) {
+      width: 200px;
+    }
+    @media ($desktop-widths) {
+      width: 280px;
+    }
   }
 }
 
 .userpost__buttons {
   padding-bottom: 30px;
-  @media ($desktop-widths) {
+  flex-basis: 100%;
+  @media ($tablet-widths) {
     display: flex;
-    flex-basis: 100%;
+    flex-direction: column;
     order: 6;
     padding-bottom: 0;
     margin-top: auto;
   }
+  @media ($desktop-widths) {
+    flex-direction: row;
+  }
 }
 .userpost__btn {
   display: block;
-  width: 180px;
+  width: 280px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 18px;
@@ -158,9 +221,11 @@
     color: $dark-blue;
     border-color: $dark-blue;
     opacity: .1;
-    margin-right: 0;
+  }
+  @media ($tablet-widths) {
+    width: 260px;
   }
   @media ($desktop-widths) {
-
+    width: 180px;
   }
 }

@@ -12,6 +12,9 @@ display: none;
     width: 300%;
     transition: transform .8s ease;
     font-size: 0;
+    @media ($tablet-widths) {
+      width: 100%;
+    }
     @media ($desktop-widths) {
       display: flex;
     }
@@ -20,7 +23,7 @@ display: none;
   width: 320px;
   display: inline-block;
   @media ($tablet-widths) {
-    width: 700px;
+    width: 660px;
   }
   @media ($desktop-widths) {
     width: 1200px;
