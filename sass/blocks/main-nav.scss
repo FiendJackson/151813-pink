@@ -82,6 +82,17 @@
   line-height: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  &:hover {
+    border-bottom: 3px solid #fff;
+  }
+  &:focus {
+    opacity: .3;
+  }
+  &:active {
+    color: $pink;
+    opacity: 1;
+    border-bottom-color: $pink;
+  }
     @media ($desktop-widths) {
       text-transform: capitalize;
       font-weight: normal;
