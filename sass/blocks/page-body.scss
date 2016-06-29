@@ -1,9 +1,8 @@
 .page-body {
-  font-family: $opensans;
   color: $dark-blue;
 
   &__container {
-    @include container;
+
   }
   &__ask {
     display: none;
