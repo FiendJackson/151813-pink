@@ -1,8 +1,10 @@
 .page-header {
   color: $dark-blue;
   background-color: $dark-blue;
-  background-size: cover;
+  background-size: 750px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
   @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
@@ -10,6 +12,8 @@
     }
   @media ($tablet-widths) {
       background-image: url("../img/bg-back-tablet@1x.jpg");
+      background-size: cover;
+      background-position: center;
     @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {

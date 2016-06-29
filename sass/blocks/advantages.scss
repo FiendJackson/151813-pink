@@ -4,12 +4,24 @@
 .advantages__header {
     background: #ffffff;
     padding-bottom: 30px;
-
     @media ($tablet-widths) {
-
+      padding-bottom: 40px;
     }
     @media ($desktop-widths) {
+      padding-bottom: 60px;
     }
+}
+.advantages__body {
+  background: #f2f2f2;
+  &::before {
+    content: "";
+    display: block;
+    height: 50px;
+    background-image: linear-gradient(to right bottom,#fff 50%,#f2f2f2 50%);
+    @media ($tablet-widths) {
+      height: 70px;
+    }
+  }
 }
 .advantages__title {
   font-size: 24px;
@@ -17,6 +29,9 @@
   font-weight: 300;
   text-align: center;
   margin: 0;
+  &--last {
+    padding-top: 28px;
+  }
   @media ($tablet-widths) {
     font-size: 40px;
     line-height: 50px;
@@ -53,11 +68,13 @@
   max-height: 790px;
   @media ($tablet-widths) {
     display: block;
+    margin-top: -80px;
   }
   @media ($desktop-widths) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: -100px;
   }
 }
 .advantages__screen {
@@ -90,24 +107,20 @@
   @media ($tablet-widths) {
     float: right;
     max-width: 340px;
-    padding-top: 40px;
-    padding-right: 30px;
+    padding-top: 27px;
   }
   @media ($desktop-widths) {
     width: 320px;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-right: 0;
     background: #f2f2f2;
-      &:first-child {
-      padding-top: 0;
-      }
   }
   &--first {
     @media ($tablet-widths) {
-      padding-top: 83px;
+      padding-top: 85px;
     }
     @media ($desktop-widths) {
-      padding-top: 60px;
+      padding-top: 50px;
     }
   }
 }
@@ -119,7 +132,7 @@
   text-align: center;
   @media ($tablet-widths) {
     text-align: left;
-    padding-left: 40px;
+    padding-left: 10px;
   }
     @media ($desktop-widths) {
       font-size: 30px;
@@ -132,16 +145,12 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 15px 23px 28px;
   margin-top: 0;
   margin-bottom: 0;
   @media ($tablet-widths) {
     text-align: left;
-    padding-top: 10px;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 10px;
   }
   @media ($desktop-widths) {
     font-size: 18px;
@@ -150,12 +159,15 @@
     padding: 25px 40px;
   }
 }
+
 .advantages__image {
   display: block;
   margin: 0 auto;
+  padding-top: 10px;
   @media ($tablet-widths) {
-    width: 260px;
-    height: 500px;
+    width: 268px;
+    height: 481px;
+    padding-top: 0;
   }
   @media ($desktop-widths) {
     width: 292px;

@@ -2,6 +2,10 @@
   position: relative;
   z-index: 2;
   background: #fff;
+  margin-top: -40px;
+  @media ($tablet-widths) {
+    margin-top: 0;
+  }
 }
 .reviews__wrapper {
   @include wrapper;
@@ -68,7 +72,7 @@
   }
   @media ($desktop-widths) {
     padding: 183px 135px 0;
-    background: #fff url("../img/icon-quotes.svg") no-repeat center;
+    background: #fff url("../img/icon-quotes.svg") no-repeat center 70px;
   }
 }
 
@@ -123,11 +127,13 @@
   @media ($desktop-widths) {
     display: block;
     position: absolute;
-    top: 45%;
+    left: 10px;
+    top: 210px;
     width: 30px;
     height: 50px;
     background: #fff url("../img/icon-review-arrow-left.svg") no-repeat;
     &--right {
+      left: auto;
       right: 0;
       background: #fff url("../img/icon-review-arrow-right.svg") no-repeat;
     }

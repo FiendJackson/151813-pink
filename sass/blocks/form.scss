@@ -297,7 +297,7 @@
 .form__checkbox {
   display: none;
   &:checked ~ .form__checkbox-text::before {
-    background: #fff url("../img/icon-yes.svg") center no-repeat;
+    background: #fff url("../img/icon-yes-pink.svg") center no-repeat;
     background-size: 70%;
   }
 }
