@@ -3,9 +3,11 @@
   @media ($tablet-widths) {
     display: block;
     background: #fff;
+    padding-top: 20px;
   }
   @media ($desktop-widths) {
     background: #f2f2f2;
+    padding-top: 0;
   }
 
   &__wrapper {
@@ -14,9 +16,15 @@
       display: flex;
       justify-content: space-between;
       padding: 55px 0 100px;
+      background: url(../img/icon-timer.svg);
+      background-size: 240px;
+      background-repeat: no-repeat;
+      background-position: 20px 40px;
     }
     @media ($desktop-widths) {
       padding: 110px 0 95px;
+      background-size: 302px;
+      background-position: 10px 37px;
     }
   }
 
@@ -66,6 +74,7 @@
 
   &__header {
     font-size: 30px;
+    line-height: 38px;
     margin: 0;
     padding-top: 20px;
     padding-right: 130px;
@@ -79,13 +88,13 @@
       font-size: 14px;
       line-height: 25px;
       margin: 0;
-      padding: 0;
-      padding-bottom: 5px;
+      padding: 5px 35px 5px 0;
     }
     @media ($desktop-widths) {
-    font-size: 18px;
-    padding: 20px 0 32px;
-    padding-right: 40px;
+      font-size: 18px;
+      line-height: 28px;
+      padding: 24px 0px 32px;
+      padding-right: 32px;
     }
   }
 

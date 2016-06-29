@@ -297,7 +297,7 @@
 .form__checkbox {
   display: none;
   &:checked ~ .form__checkbox-text::before {
-    background: #fff url("../img/icon-yes.svg") center no-repeat;
+    background: #fff url("../img/icon-yes-pink.svg") center no-repeat;
     background-size: 70%;
   }
 }
@@ -375,7 +375,6 @@
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
-  font-family: $opensans;
   padding: 10px 30px;
   width: 100%;
   min-height: 200px;
@@ -392,7 +391,6 @@
 .form__button {
   display: block;
   margin: 0 auto;
-  font-family: $opensans;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;

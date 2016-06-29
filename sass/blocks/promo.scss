@@ -3,16 +3,38 @@
   min-height: 665px;
   box-sizing: border-box;
   background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: left 105px;
+  background-size: 255px;
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
   background-repeat: no-repeat;
   @media ($tablet-widths) {
     display: block;
-    background-position: 200px 125px;
-    background-size: 450px;
+    background-position: right bottom;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
     min-height: 620px;
+    background-size: 700px;
   }
   @media ($desktop-widths) {
-    background-position: 60% bottom;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
+    background-size: 1055px;
     min-height: 743px;
+  }
+  @media (min-width: 1200px) {
+    background-position: 60% bottom;
   }
   &--short {
     min-height: auto;
@@ -37,11 +59,11 @@
  }
 .promo__block {
   @media ($tablet-widths) {
-    width: 300px;
-    padding-left: 10px;
+    width: 340px;
     padding-top: 60px;
   }
   @media ($desktop-widths) {
+    width: 300px;
     padding-top: 0;
     padding-left: 10px;
   }
@@ -59,7 +81,7 @@
     font-size: 40px;
     line-height: 50px;
     padding-bottom: 0;
-    padding-right: 20px;
+    padding-right: 50px;
     &--short {
       font-size: 50px;
       line-height: 60px;
@@ -72,7 +94,7 @@
     line-height: 60px;
     padding-top: 110px;
     padding-bottom: 50px;
-    padding-right: 0;
+    padding-right: 40px;
     &--short {
       padding-top: 65px;
       padding-bottom: 100px;

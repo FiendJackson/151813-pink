@@ -1,21 +1,12 @@
 $dark-blue: #283645;
 $pink: #d22856;
-$opensans: 'Open Sans', sans-serif;
+$font-family: 'OpenSans', 'Arial', sans-serif;
 $tablet-widths: 'min-width: 660px';
 $desktop-widths: 'min-width: 960px';
 @mixin ul-reset() {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-@mixin container() {
-    max-width: 100%;
-  @media ($tablet-widths) {
-    max-width: 100%;
-  }
-  @media ($desktop-widths) {
-    max-width: 100%;
-  }
 }
 @mixin wrapper() {
   max-width: 320px;
