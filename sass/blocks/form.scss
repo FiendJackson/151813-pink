@@ -227,6 +227,7 @@
 }
 
 .form__input-area {
+  position: relative;
   @media ($tablet-widths) {
     display: flex;
     flex-wrap: wrap;
@@ -234,10 +235,36 @@
     flex-basis: 100%;
     padding: 0 40px;
     box-sizing: border-box;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 64px;
+      height: 64px;
+      background: #f2f2f2 url("../img/icon-phone.svg") no-repeat;
+      background-size: 50%;
+      background-position: center center;
+    }
   }
   @media ($desktop-widths) {
     flex-basis: 375px;
     padding: 0;
+  }
+  &--mail::after {
+    @media ($tablet-widths) {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 64px;
+      height: 64px;
+      background: #f2f2f2 url("../img/icon-mail.svg") no-repeat;
+      background-size: 50%;
+      background-position: center center;
+    }
   }
 }
 
@@ -300,6 +327,7 @@
 }
 
 .form__tel {
+  position: relative;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
@@ -308,9 +336,11 @@
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 64px;
   order: -1;
 }
 .form__email {
+  position: relative;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blue;
@@ -319,6 +349,7 @@
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 64px;
   margin-bottom: 50px;
   order: -1;
   @media($tablet-widths) {

@@ -11,7 +11,10 @@
     background: transparent url("../img/bg-triangle-white-footer.svg") no-repeat;
     height: 72px;
     background-size: 100% 100%;
-    top: 99%;
+    top: 94%;
+    @media ($tablet-widths) {
+      top: 99%;
+    }
   }
 }
 
