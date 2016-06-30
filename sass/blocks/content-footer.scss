@@ -1,8 +1,15 @@
 .content-footer {
   color: $dark-blue;
-  padding-top: 35px;
+  padding-top: 65px;
   text-align: center;
+  &--form {
+    padding-top: 55px;
+  }
+  @media ($tablet-widths) {
+    padding-top: 35px;
+  }
 }
+
 .content-footer__wrapper {
   @include wrapper;
   @media ($tablet-widths) {
@@ -16,23 +23,38 @@
     }
   }
 }
+
 .content-footer__logo {
 
+  @media ($tablet-widths) {
+    padding-left: 20px;
+  }
+  @media ($desktop-widths) {
+    padding-left: 10px;
+  }
 }
+
 .content-footer__image {
   text-align: center;
   padding-bottom: 40px;
 }
+
 .content-footer__social-list {
   @include ul-reset;
   font-size: 0;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   @media ($tablet-widths) {
     margin: auto;
     padding-right: 24px;
     padding-top: 5px;
+    padding-bottom: 40px;
+  }
+  @media ($desktop-widths) {
+    padding-left: 10px;
+    padding-right: 0;
   }
 }
+
 .content-footer__social-item {
   display: inline-block;
   vertical-align: top;
@@ -61,6 +83,7 @@
     background-image: url("../img/icon-youtube.svg");
   }
 }
+
 .content-footer__signature {
   font-size: 14px;
   line-height: 18px;
@@ -70,8 +93,13 @@
   }
   @media ($desktop-widths) {
     font-size: 18px;
+    padding-right: 5px;
   }
 }
+
 .content-footer__academy-logo {
   vertical-align: middle;
+  @media ($desktop-widths) {
+    padding-left: 5px;
+  }
 }

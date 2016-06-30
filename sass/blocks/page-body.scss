@@ -1,43 +1,55 @@
-.page-body {
-  color: $dark-blue;
-
-  &__container {
-
+  .page-body__ask {
+  display: none;
+  @media ($tablet-widths) {
+    display: inline;
   }
-  &__ask {
-    display: none;
-    @media ($tablet-widths) {
-      display: inline;
-    }
-  }
-  &__description {
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
+}
+
+.page-body__description {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding: 45px 15px;
+  padding-bottom: 20px;
+  margin: 0;
+  background: #fff;
+  &--gallery {
     padding: 45px 15px;
-    padding-bottom: 20px;
-    margin: 0;
-    background: #fff;
-    &--gallery,  &--userpost {
-      padding-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  &--userpost {
+    padding: 25px 15px 45px;
+  }
+  @media ($tablet-widths) {
+    font-size: 18px;
+    &--userpost {
+      padding-bottom: 70px;
     }
-    @media ($tablet-widths) {
-      font-size: 18px;
-      &--form {
-        padding: 90px 60px 50px;
-      }
+    &--form {
+      padding: 90px 60px 50px;
     }
-    @media ($desktop-widths) {
-      padding: 60px 100px;
-      &--form {
-        padding: 90px 90px 30px;
-      }
-      &--gallery {
-          padding: 90px 100px;
-      }
-      &--userpost {
-          padding: 5px 100px 90px;
-      }
+    &--gallery {
+      padding: 90px 70px 80px;
     }
+  }
+  @media ($desktop-widths) {
+    padding: 60px 100px;
+    &--form {
+      padding: 90px 90px 30px;
+    }
+    &--gallery {
+        padding: 90px 100px;
+    }
+    &--userpost {
+        padding: 5px 100px 65px;
+    }
+  }
+}
+.page-body__br {
+  @media ($tablet-widths) {
+    display: none;
+  }
+  @media ($desktop-widths) {
+      display: inline;
   }
 }

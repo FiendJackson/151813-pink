@@ -1,13 +1,15 @@
 .slider {
   position: relative;
-
 }
+
 .slider__inner {
     overflow: hidden;
 }
+
 .slider__input {
 display: none;
 }
+
 .slider__slides {
     width: 300%;
     transition: transform .8s ease;
@@ -19,6 +21,7 @@ display: none;
       display: flex;
     }
 }
+
 .slider__item {
   width: 320px;
   display: inline-block;
@@ -31,6 +34,7 @@ display: none;
     flex-direction: column;
   }
 }
+
 .slider__toggles {
   width: 100%;
   padding-top: 30px;
@@ -40,7 +44,4 @@ display: none;
   @media ($desktop-widths) {
     display: none;
   }
-}
-.slider__toggle {
-
 }

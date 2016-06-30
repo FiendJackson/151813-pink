@@ -3,11 +3,13 @@ $pink: #d22856;
 $font-family: 'OpenSans', 'Arial', sans-serif;
 $tablet-widths: 'min-width: 660px';
 $desktop-widths: 'min-width: 960px';
+
 @mixin ul-reset() {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 @mixin wrapper() {
   max-width: 320px;
   margin: 0 auto;
@@ -18,4 +20,16 @@ $desktop-widths: 'min-width: 960px';
   @media ($desktop-widths) {
     max-width: 960px;
   }
+}
+
+@mixin roundicon() {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  z-index: 1;
 }

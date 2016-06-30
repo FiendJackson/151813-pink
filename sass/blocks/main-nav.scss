@@ -7,6 +7,7 @@
     }
   }
 }
+
 .main-nav__header {
   display: flex;
   align-items: baseline;
@@ -20,6 +21,7 @@
     min-width: 310px;
   }
 }
+
 .main-nav__wrapper {
   @media ($desktop-widths) {
     @include wrapper;
@@ -28,18 +30,19 @@
     align-items: center;
   }
 }
+
 .main-nav__logo {
-  padding: 21px;
-}
-.main-nav-header__image {
-
-}
-.main-nav__toogle {
-
-  &--closed {
-
+  padding-top: 20px;
+  padding-left: 20px;
+  @media ($tablet-widths) {
+    padding-left: 40px;
+    padding-top: 27px;
+  }
+  @media ($desktop-widths) {
+    padding: 0 10px 10px;
   }
 }
+
 .main-nav__body {
   display: none;
   flex-grow: 1;
@@ -51,27 +54,28 @@
 .main-nav__list {
   background-color: $dark-blue;
   @include ul-reset;
+  font-size: 0;
   @media ($desktop-widths) {
     padding-left: 18px;
     background: none;
   }
 }
+
 .main-nav__item {
   border-bottom: 1px solid #000000;
   border-top: 1px solid rgba(255, 255, 255, .75);
   text-align: center;
-  &--active {
-
-  }
   @media ($desktop-widths) {
     display: inline-block;
+    vertical-align: top;
     border: none;
-    padding-right: 75px;
+    padding-right: 80px;
     &:last-child {
       padding-right: 0;
     }
   }
 }
+
 .main-nav__anchor {
   display: block;
   padding-top: 16px;
@@ -83,19 +87,28 @@
   text-transform: uppercase;
   font-weight: bold;
   &:hover {
-    border-bottom: 3px solid #fff;
+    color: $pink;
   }
   &:focus {
-    opacity: .3;
-  }
-  &:active {
     color: $pink;
-    opacity: 1;
-    border-bottom-color: $pink;
+    opacity: .3;
   }
     @media ($desktop-widths) {
       text-transform: capitalize;
       font-weight: normal;
+      border-bottom: 3px solid transparent;
+      &:hover {
+        color: #fff;
+        border-bottom: 3px solid #fff;
+      }
+      &:focus {
+        opacity: .3;
+      }
+      &:active {
+        color: $pink;
+        opacity: 1;
+        border-bottom-color: $pink;
+      }
     }
 }
 
@@ -159,7 +172,13 @@
   position: relative;
   width: 50px;
   height: 24px;
-  margin-right: 30px;
+  margin-right: 20px;
+  @media ($tablet-widths) {
+    margin-right: 40px;
+  }
+  @media ($desktop-widths) {
+    margin-right: 30px;
+  }
   &::before {
     content: "";
     display: block;

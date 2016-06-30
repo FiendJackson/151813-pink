@@ -1,6 +1,3 @@
-.gallery {
-
-}
 .gallery__wrapper {
   max-width: 280px;
   margin: 0 auto;
@@ -14,6 +11,7 @@
     max-width: 940px;
   }
 }
+
 .gallery__item {
   display: flex;
   flex-basis: 100%;
@@ -26,12 +24,16 @@
   @media ($tablet-widths) {
     flex-basis: 300px;
     padding: 0;
-    padding-bottom: 55px;
+    padding-bottom: 20px;
     &--panorama {
       padding-bottom: 20px;
     }
   }
+  @media ($desktop-widths) {
+    padding-bottom: 55px;
+  }
 }
+
 .gallery__image {
   display: block;
   width: 100%;
@@ -41,91 +43,113 @@
       width: 100%;
     }
   }
-
 }
+
 .gallery__info {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 20px 25px;
+  padding: 13px 17px 20px;
   background: #f2f2f2;
   box-sizing: border-box;
-  min-height: 155px;
+  min-height: 120px;
+  @media ($tablet-widths) {
+    min-height: 155px;
+    padding: 20px 25px;
+  }
   &--panorama {
     flex-direction: row;
     max-width: 280px;
     min-height: auto;
     box-sizing: border-box;
     margin: 0 auto;
-  }
-  @media ($tablet-widths) {
-      &--panorama {
-        max-width: 620px;
-        margin-bottom: 30px;
-      }
-  }
-  @media ($desktop-widths) {
-      &--panorama {
-        max-width: 940px;
-      }
+    padding: 12px 17px 20px;
+    @media ($tablet-widths) {
+      max-width: 620px;
+      margin-bottom: 30px;
+    }
+    @media ($desktop-widths) {
+      max-width: 940px;
+    }
   }
 }
+
 .gallery__author {
   margin: 0;
   padding: 0;
 }
+
 .gallery__name {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
 }
+
 .gallery__date {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 300;
   text-transform: uppercase;
 }
+
 .gallery__message {
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  padding-bottom: 5px;
   &--panorama {
     order: 2;
   }
+  @media ($tablet-widths) {
+    padding-bottom: 0;
+  }
 }
+
 .gallery__like-block {
-  margin-top: auto;
+  margin-top: 0;
   display: flex;
   align-items: baseline;
+  padding: 0;
+  @media ($tablet-widths) {
+    margin-top: auto;
+  }
   &--panorama {
     margin-top: 0;
     margin-right: auto;
     order: 3;
     @media ($tablet-widths) {
       margin-left: auto;
-      margin-right: 5px;
+      margin-right: 0;
       order: 0;
-      padding: 0 5px;
+      padding: 0px 5px;
+    }
+    @media ($desktop-widths) {
+      margin-right: 2px;
     }
   }
 }
+
 .gallery__like {
   text-decoration: none;
-  @media ($desktop-widths) {
+  @media ($tablet-widths) {
     order: 1;
-    padding-left: 20px;
+    padding-left: 17px;
     margin-left: auto;
   }
 }
-.gallery__heart {
 
-}
 .gallery__like-text {
   font-size: 12px;
   line-height: 24px;
   color: $pink;
   text-transform: uppercase;
+  padding-left: 19px;
+  padding-right: 3px;
+  @media ($tablet-widths) {
+    padding-left: 0;
+  }
 }
+
 .gallery__like-count {
   font-size: 12px;
   line-height: 24px;

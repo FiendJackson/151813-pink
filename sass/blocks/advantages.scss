@@ -1,6 +1,7 @@
 .advantages {
     background: #f2f2f2;
 }
+
 .advantages__header {
     background: #ffffff;
     padding-bottom: 30px;
@@ -11,6 +12,7 @@
       padding-bottom: 60px;
     }
 }
+
 .advantages__body {
   background: #f2f2f2;
   &::before {
@@ -23,6 +25,7 @@
     }
   }
 }
+
 .advantages__title {
   font-size: 24px;
   line-height: 30px;
@@ -37,7 +40,7 @@
     line-height: 50px;
     padding-top: 47px;
     &--last {
-    padding: 0 120px;
+      padding: 0 120px;
     }
   }
   @media ($desktop-widths) {
@@ -45,11 +48,11 @@
     line-height: 60px;
     padding-top: 67px;
     &--last {
-    padding: 0 120px;
+      padding: 0 120px;
     }
   }
-
 }
+
 .advantages__wrapper {
   @include wrapper;
   padding-top: 30px;
@@ -62,6 +65,7 @@
     }
   }
 }
+
 .advantages__screenshots {
   display: flex;
   flex-direction: column;
@@ -77,6 +81,7 @@
     margin-top: -100px;
   }
 }
+
 .advantages__screen {
   display: none;
   &--main {
@@ -102,8 +107,8 @@
     }
   }
 }
-.advantages__item {
 
+.advantages__item {
   @media ($tablet-widths) {
     float: right;
     max-width: 340px;
@@ -124,6 +129,7 @@
     }
   }
 }
+
 .advantages__slogan {
   display: block;
   font-size: 18px;
@@ -134,13 +140,14 @@
     text-align: left;
     padding-left: 10px;
   }
-    @media ($desktop-widths) {
-      font-size: 30px;
-      line-height: 30px;
-      text-align: center;
-      padding: 0 40px;
-    }
+  @media ($desktop-widths) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 40px;
+  }
 }
+
 .advantages__text {
   font-size: 14px;
   line-height: 24px;

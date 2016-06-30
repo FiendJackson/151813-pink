@@ -13,6 +13,7 @@
     background-size: 100%;
   }
 }
+
 .callback__title {
   font-size: 24px;
   line-height: 30px;
@@ -33,6 +34,7 @@
     padding-top: 35px;
   }
 }
+
 .callback__wrapper {
   @include wrapper;
   display: flex;
@@ -44,12 +46,12 @@
     justify-content: space-around;
   }
 }
+
 .callback__element {
   flex-basis: 100%;
   @media ($tablet-widths) {
     flex-basis: 50%;
     padding-top: 15px;
-
   }
   @media ($desktop-widths) {
     flex-basis: auto;
@@ -71,6 +73,7 @@
     }
   }
 }
+
 .callback__headers {
   display: block;
   font-size: 18px;
@@ -78,6 +81,7 @@
   font-weight: bold;
   text-align: center;
 }
+
 .callback__anchors {
   display: block;
   font-size: 24px;

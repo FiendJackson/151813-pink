@@ -9,104 +9,101 @@
     background: #f2f2f2;
     padding-top: 0;
   }
+}
 
-  &__wrapper {
-    @include wrapper;
-    @media ($tablet-widths) {
-      display: flex;
-      justify-content: space-between;
-      padding: 55px 0 100px;
-      background: url(../img/icon-timer.svg);
-      background-size: 240px;
-      background-repeat: no-repeat;
-      background-position: 20px 40px;
-    }
-    @media ($desktop-widths) {
-      padding: 110px 0 95px;
-      background-size: 302px;
-      background-position: 10px 37px;
-    }
+.effect24__wrapper {
+  @include wrapper;
+  @media ($tablet-widths) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0 100px;
+    background: url(../img/icon-timer.svg);
+    background-size: 240px;
+    background-repeat: no-repeat;
+    background-position: 20px 40px;
   }
+  @media ($desktop-widths) {
+    padding: 110px 0 95px;
+    background-size: 302px;
+    background-position: 10px 37px;
+  }
+}
 
-  &__clock {
-    @media ($tablet-widths) {
-      width: 175px;
-      height: 175px;
-      border: 15px solid $pink;
-      border-radius: 50%;
-      text-align: center;
-      margin-left: 35px;
-      align-self: center;
-      margin-top: 40px;
-    }
-    @media ($desktop-widths) {
+.effect24__clock {
+  @media ($tablet-widths) {
+    width: 175px;
+    height: 175px;
+    border: 15px solid $pink;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 35px;
+    align-self: center;
+    margin-top: 40px;
+  }
+  @media ($desktop-widths) {
     width: 220px;
     height: 220px;
     align-self: none;
     margin-top: 0;
-    }
   }
+}
 
-  &__number {
-    @media ($tablet-widths) {
-      display: block;
-      padding-top: 16px;
-      font-size: 96px;
-      font-weight: bold;
-      color: $pink;
-    }
-    @media ($desktop-widths) {
-      font-size: 120px;
-      padding-top: 23px;
-    }
-
-
+.effect24__number {
+  @media ($tablet-widths) {
+    display: block;
+    padding-top: 16px;
+    font-size: 96px;
+    font-weight: bold;
+    color: $pink;
   }
-
-  &__content {
-    @media ($tablet-widths) {
-      width: 330px;
-    }
-    @media ($desktop-widths) {
-      width: 585px;
-    }
+  @media ($desktop-widths) {
+    font-size: 120px;
+    padding-top: 23px;
   }
+}
 
-  &__header {
-    font-size: 30px;
-    line-height: 38px;
+.effect24__content {
+  @media ($tablet-widths) {
+    width: 330px;
+  }
+  @media ($desktop-widths) {
+    width: 585px;
+  }
+}
+
+.effect24__header {
+  font-size: 30px;
+  line-height: 38px;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 130px;
+  @media ($desktop-widths) {
+    padding-right: 0;
+  }
+}
+
+.effect24__text {
+  @media ($tablet-widths) {
+    font-size: 14px;
+    line-height: 25px;
     margin: 0;
-    padding-top: 20px;
-    padding-right: 130px;
-    @media ($desktop-widths) {
-      padding-right: 0;
-    }
+    padding: 5px 35px 5px 0;
   }
-
-  &__text {
-    @media ($tablet-widths) {
-      font-size: 14px;
-      line-height: 25px;
-      margin: 0;
-      padding: 5px 35px 5px 0;
-    }
-    @media ($desktop-widths) {
-      font-size: 18px;
-      line-height: 28px;
-      padding: 24px 0px 32px;
-      padding-right: 32px;
-    }
+  @media ($desktop-widths) {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 24px 0px 32px;
+    padding-right: 32px;
   }
+}
 
-  &__anchor {
-    @media ($tablet-widths) {
+.effect24__anchor {
+  @media ($tablet-widths) {
     font-size: 14px;
     color: $pink;
     text-decoration: underline;
-    }
-    @media ($desktop-widths) {
-      font-size: 18px;
-    }
   }
-
+  @media ($desktop-widths) {
+    font-size: 18px;
+  }
 }

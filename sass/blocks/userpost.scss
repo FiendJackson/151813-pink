@@ -1,83 +1,123 @@
-@mixin roundicon() {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  border: 2px solid $pink;
-  border-radius: 50%;
-  z-index: 1;
-}
 .userpost {
   background: #f2f2f2;
+  @media ($desktop-widths) {
+    background: #fff;
+    padding-bottom: 67px;
+  }
 }
 .userpost__wrapper {
-  @include wrapper;
+  background: #f2f2f2;
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 15px 0px;
   @media ($tablet-widths) {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 10px;
+    max-width: 640px;
+    padding: 60px 10px 50px;
   }
   @media ($desktop-widths) {
-    padding: 30px 180px;
+    max-width: 940px;
+    box-sizing: border-box;
+    padding: 55px;
   }
 }
 .userpost__body {
 
 }
+.userpost__picture {
+  width: 100%;
+  @media ($tablet-widths) {
+    width: auto;
+  }
+}
 .userpost__image {
   display: block;
   margin: 0 auto;
-  padding-top: 20px;
+  width: 100%;
   @media ($tablet-widths) {
     margin: 0;
     padding-top: 0;
+    width: 300px;
+    height: 400px;
+  }
+  @media ($desktop-widths) {
+    padding-left: 25px;
   }
 }
 .userpost__options {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 20px;
   @media ($tablet-widths) {
     flex-basis: 280px;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-  }
-  @media ($desktop-widths) {
-    flex-basis: 420px;
-  }
-}
-.userpost__effects {
-  @include ul-reset;
-  font-size: 0;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  @media ($tablet-widths) {
+    justify-content: space-around;
     padding-top: 0;
   }
+  @media ($desktop-widths) {
+    flex-basis: 415px;
+  }
 }
+
+.userpost__effects-container {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  margin-right: auto;
+  justify-content: center;
+  @media ($tablet-widths) {
+    flex-direction: column;
+    flex-basis: auto;
+    min-height: 200px;
+    justify-content: space-between;
+  }
+}
+
+.userpost__range-container {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  min-height: 72px;
+  @media ($tablet-widths) {
+    flex-basis: auto;
+    min-height: 160px;
+  }
+}
+
 .userpost__effects-item {
   display: inline-block;
   vertical-align: top;
   padding-top: 20px;
   padding-right: 40px;
+
   &--contrast {
     padding-right: 0;
   }
   @media ($tablet-widths) {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    box-sizing: border-box;
     padding: 0;
     border-bottom: 1px solid rgba(40, 54, 69, .1);
     &--crop {
       order: 0;
+      min-height: 60px;
     }
     &--fill {
       order: 1;
+      min-height: 72px;
     }
     &--contrast {
       order: 2;
+      min-height: 72px;
     }
   }
   &:last-child {
@@ -86,116 +126,124 @@
   &--active {
 
   }
-  @media ($tablet-widths) {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-basis: 280px;
-  }
   @media ($desktop-widths) {
     flex-basis: 100%;
   }
 }
+
 .userpost__effects-icon {
-  margin-bottom: 15px;
   &--crop {
 
   }
   &--fill {
-
+    margin: auto;
   }
   &--contrast {
-
+    width: 25px;
   }
   @media ($tablet-widths) {
     width: 25px;
+    &--contrast {
+      width: 15px;
+    }
   }
   @media ($desktop-widths) {
     width: 45px;
+    &--contrast {
+      width: 35px;
+    }
   }
 }
 
 
 .userpost__range {
   position: relative;
-  width: 280px;
-  height: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-  @media ($tablet-widths) {
-    width: 200px;
-  }
-  @media ($desktop-widths) {
-    width: 280px;
-  }
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   &--crop {
-    display: none;
+    order: 1;
+    min-height: 72px;
+    margin-top: 10px;
     @media ($tablet-widths) {
       display: block;
+      order: 2;
+      margin-top: 0;
+    }
+    @media ($desktop-widths) {
+      order: 1;
+      min-height: 60px;
     }
   }
   &--fill {
     display: none;
+    order: 2;
     @media ($tablet-widths) {
       display: block;
+      min-height: 60px;
+      order: 1;
+    }
+    @media ($desktop-widths) {
+      order: 2;
+      min-height: 72px;
     }
   }
   &--contrast {
     display: none;
+    order: 3;
     @media ($tablet-widths) {
       display: block;
-    }
-  }
-  &--mobile {
-    margin-top: 10px;
-    display: block;
-    @media ($tablet-widths) {
-      display: none;
+      min-height: 72px;
     }
   }
   &::before {
     @include roundicon;
-    left: 70%;
+    left: 75%;
+    top: 16px;
+    @media ($tablet-widths) {
+      left: 32%;
+    }
   }
   &--fill::before {
     @include roundicon;
-    left: 20%;
+    left: 80%;
+    top: 27px;
   }
   &--contrast::before {
     @include roundicon;
-    left: 50%;
-  }
-  &--mobile::before {
-    @include roundicon;
-    left: 190px;
+    left: 56%;
+    top: 27px;
   }
   &::after {
     content: "";
     display: block;
     position: absolute;
-    top: 6px;
-    width: 280px;
+    top: 34px;
+    left: 47px;
+    width: 240px;
     height: 2px;
     background: $dark-blue;
     @media ($tablet-widths) {
       width: 200px;
     }
     @media ($desktop-widths) {
-      width: 280px;
+      width: 290px;
+    }
+  }
+  &--crop::after {
+    top: 22px;
+    left: 18px;
+    @media ($tablet-widths) {
+      left: 47px;
     }
   }
 }
 
 .userpost__buttons {
-  padding-bottom: 30px;
   flex-basis: 100%;
   @media ($tablet-widths) {
     display: flex;
     flex-direction: column;
     order: 6;
-    padding-bottom: 0;
     margin-top: auto;
   }
   @media ($desktop-widths) {
@@ -205,12 +253,11 @@
 .userpost__btn {
   display: block;
   width: 280px;
-  margin: 0 auto;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   padding: 15px 35px;
-  margin-top: 25px;
+  margin: 25px 0 0;
   box-sizing: border-box;
   font-weight: bold;
   color: $pink;
@@ -218,14 +265,24 @@
   border: 3px solid $pink;
   border-radius: 30px;
   &--disabled {
+    margin-top: 15px;
     color: $dark-blue;
     border-color: $dark-blue;
     opacity: .1;
+    @media ($tablet-widths) {
+      margin-top: 25px;
+      margin-left: auto;
+    }
+    @media ($desktop-widths) {
+      margin-left: auto;
+    }
   }
   @media ($tablet-widths) {
     width: 260px;
+    margin: 25px auto 0;
   }
   @media ($desktop-widths) {
     width: 180px;
+    margin: 25px 0 0;
   }
 }
